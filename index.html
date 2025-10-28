@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page contains a brief introduction of Abel Chiwandire
+                                    and lists the courses in the Web and Computer Programming
+                                    certificate he is currently enrolled in.">
+    <meta name="author" content="Abel Chiwandire">
+    <title>Home</title>
+
+    <!-- CSS links Here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JS script Here-->
+    <script src="scripts/navigation.js" defer></script>
+
+</head>
+
+<body>  
+    <header>
+        <img src="images/logo.svg" alt="Company Logo" width="16" height="16">
+        <span>Abel Chiwandire</span>
+        <button id="nav-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="section-container">
+            <section class="card bg-clr">
+                <h2>About Me</h2>
+                <div class="padding">
+                    <p>My name is Abel but my friends call me Hova. I got that nickname because I used to rap about Jesus (Jehovah) all the time.
+                        I am very passionate about music. I appreciate creativity in general. I love reading for knowledge.
+                        I love books that teach me how to better myself so you can imagine how much time I spend reading scriptures.
+                        I also love playing football, not the American kind. I am originally from Zimbabwe but I live in South Africa now
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Student Photo</h2>
+                <div class="padding bg-clr">
+                    <img src="images/profile.jpg" alt="Abel Chiwandire's Photo" loading="lazy">
+                </div>
+            </section>
+        </div>
+
+        <section>
+            <h2>Web and Computer Programming Courses</h2>
+
+            <div class="course-btn">
+                <button id="all" class="btn current">All Courses</button>
+                <button id="wdd" class="btn">WDD Courses</button>
+                <button id="cse" class="btn">CSE Courses</button>
+            </div>
+
+            <p class="text-align">The total number of credits for the courses listed below is <span id="credits" class="course-num"></span></p>
+
+            <div id="courses" class="card-layout"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/abel.chiwandire.2025" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+        </div>
+        <p><span id="currentYear"></span> • Abel Chiwandire • Johannesburg, South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
