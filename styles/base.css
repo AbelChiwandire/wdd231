@@ -13,6 +13,13 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
 }
 
 main {
