@@ -75,7 +75,7 @@ const coursesList = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
