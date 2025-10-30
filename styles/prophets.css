@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+footer {
+    text-align: center;
+    margin: 1rem;
+}
+
+h2 {
+    margin: 0.5rem 0;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: #ddd;
+    padding: 0.6rem;
+    margin: 1.5rem;
+    box-shadow: 0 0 5px 10px #ccc;
+}
+
+section {
+    margin: 0.2rem;
+    padding: 0.6rem;
+    background-color: rgba(39, 146, 179, 0.372);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    box-shadow: 0 0 10px #000;
+    margin: 0.5rem;
+}
