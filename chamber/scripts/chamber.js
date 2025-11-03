@@ -60,12 +60,17 @@ const displayMembers = (membersArr) => {
         const logo = document.createElement('img');
         const address = document.createElement('p');
         const phone = document.createElement('p');
-        const site = document.createElement('p');
+        const site = document.createElement('a');
 
         name.textContent = member.name;
         address.textContent = member.address;
         phone.textContent = member.phone;
-        site.innerHTML = `<span class="section-url">${member.website}</span>`;
+
+        site.innerHTML = `${member.website}`;
+        site.target = '_blank';
+        site.setAttribute('href', `${member.website}`);
+        site.setAttribute('aria-label', `Navigate to ${member.name} official website`);
+
         logo.setAttribute('src', member.image);
         logo.setAttribute('alt', `${member.name} logo`);
         logo.setAttribute('loading', 'lazy');

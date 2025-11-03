@@ -111,6 +111,16 @@ section {
 	h3 {
 		font-size: 1.5rem;
 	}
+
+	a {
+		text-decoration: none;
+		color: #1E1A1D;
+	}
+
+	a:after {
+		content: "\2197";
+		margin-left: 0.2em; 
+	}
 }
 
 .grid {
@@ -128,11 +138,6 @@ section {
 		box-shadow: 0 5px 5px 5px #8DA9C4;
 		& > * {
 			margin: 0.1rem;
-		}
-
-
-		.section-url {
-			color: #005F73;
 		}
 	}
 }
