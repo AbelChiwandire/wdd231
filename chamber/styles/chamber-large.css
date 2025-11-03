@@ -1,0 +1,34 @@
+@media (min-width: 44rem) {
+
+	#hamburger {
+		display: none;
+	}
+
+	#nav {
+		position: static;
+		background: transparent;
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+
+	#nav ul {
+		flex-direction: row;
+		gap: 1rem;
+		align-items: center;
+		list-style: none;
+	}
+
+	#nav ul li a {
+		padding: 0.5rem 0.25rem;
+	}
+
+	#nav a:hover,
+	#current a {
+		color:#005F73;
+	}
+
+	.social-media {
+		justify-content: center;
+	}
+}
