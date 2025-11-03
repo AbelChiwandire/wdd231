@@ -23,11 +23,6 @@
 		padding: 0.5rem 0.25rem;
 	}
 
-	#nav a:hover,
-	#current a {
-		color:#005F73;
-	}
-
 	.social-media {
 		justify-content: center;
 	}

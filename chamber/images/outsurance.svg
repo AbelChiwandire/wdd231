@@ -1,0 +1,76 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1542 1543" width="220" height="80">
+	<title>logoouts</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m771 1542.27c-426.31 0-770.9-344.59-770.9-770.9 0-426.32 344.59-770.91 770.9-770.91 426.31 0 770.9 344.59 770.9 770.91 0 426.31-344.59 770.9-770.9 770.9z"/>
+		</clipPath>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1541.824,0,0,1541.824,.075,771.386)">
+			<stop offset="0" stop-color="#5b2670"/>
+			<stop offset=".442" stop-color="#7a378d"/>
+			<stop offset=".763" stop-color="#7b3a8d"/>
+			<stop offset="1" stop-color="#8d5b9d"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp2">
+			<path d="m1345.4 588.24v-112.5h-468.8v112.43h211.39v312.3h137.54l-0.2-312.3z"/>
+		</clipPath>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(373.292,0,0,338.209,970.555,688.114)">
+			<stop offset="0" stop-color="#d1d3d4"/>
+			<stop offset=".442" stop-color="#e6e7e8"/>
+			<stop offset=".73" stop-color="#f1f2f2"/>
+			<stop offset=".99" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp3">
+			<path d="m876.42 475.76v243.37c0 41.38-26.05 67.36-59.76 67.36-34.33 0-63.89-26.59-63.89-67.36v-243.37h-137.25v243.37c0 109.91 79.87 181.39 200.54 181.39 120.09 0 197.6-71.5 197.6-181.39v-243.37z"/>
+		</clipPath>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(398.138,0,0,424.784,615.532,688.219)">
+			<stop offset="0" stop-color="#d1d3d4"/>
+			<stop offset=".442" stop-color="#e6e7e8"/>
+			<stop offset=".73" stop-color="#f1f2f2"/>
+			<stop offset=".99" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp4">
+			<path d="m424.37 475.63c131.93 0 227.76 88.74 227.76 211.2 0 123.06-95.83 213.57-227.76 213.57-131.94 0-227.77-89.94-227.77-213.57 0-123.05 95.83-211.2 227.77-211.2zm1.75 310.59c47.32 0 85.19-42.01 85.19-98.81 0-56.78-37.87-97.6-85.19-97.6-47.91 0-88.74 40.81-88.74 97.6 0 56.8 41.41 98.81 88.74 98.81z"/>
+		</clipPath>
+		<linearGradient id="g4" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(455.532,0,0,424.762,196.586,688.009)">
+			<stop offset="0" stop-color="#d1d3d4"/>
+			<stop offset=".442" stop-color="#e6e7e8"/>
+			<stop offset=".73" stop-color="#f1f2f2"/>
+			<stop offset=".99" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#ffffff"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { fill: url(#g4) } 
+		.s4 { fill: #ffffff } 
+	</style>
+	<g>
+	</g>
+	<g>
+		<g id="Clip-Path" clip-path="url(#cp1)">
+			<path fill-rule="evenodd" class="s0" d="m1541.9 0.5v1541.8h-1541.8v-1541.8z"/>
+		</g>
+	</g>
+	<g>
+		<g id="Clip-Path" clip-path="url(#cp2)">
+			<path fill-rule="evenodd" class="s1" d="m1345.4 475.7v424.8h-468.8v-424.8z"/>
+		</g>
+	</g>
+	<g>
+		<g id="Clip-Path" clip-path="url(#cp3)">
+			<path fill-rule="evenodd" class="s2" d="m1013.7 475.8v424.7h-398.2v-424.7z"/>
+		</g>
+	</g>
+	<g>
+		<g id="Clip-Path" clip-path="url(#cp4)">
+			<path fill-rule="evenodd" class="s3" d="m652.1 475.6v424.8h-455.5v-424.8z"/>
+		</g>
+	</g>
+	<g>
+		<path class="s4" d="m1223.7 978.7v-16.3h-76.8v107.4h78.6v-16.2h-60.5v-29.6h52.5v-16.3h-52.5v-29h58.7zm-159.1-16.7c-31.8 0-56.5 23.4-56.5 54 0 30.8 24.4 54.6 55.8 54.6 15.2 0 30.7-6.9 41.6-17.6l-10.7-12c-8.2 7.8-19.2 12.7-29.9 12.7-21.5 0-38.4-16.7-38.4-37.9 0-21.2 16.9-37.7 38.4-37.7 10.8 0 22.1 5.2 29.9 13.6l10.6-13.2c-10.5-10.2-25.7-16.5-40.8-16.5zm-99 107.8v-107.4h-17.8v77.2l-57.5-77.2h-17.8v107.4h18.1v-77l57.2 77zm-160-24.2l10.2 24.2h19.4l-47-107.4h-18.5l-47.4 107.4h18.8l10.3-24.2zm-6.9-16.1h-40.5l20.2-47.7zm-128.2 40.3h20.5l-24.1-35.9c14.3-5.5 22.3-17.6 22.3-34.8 0-23.3-15.8-36.7-43.3-36.7h-43.6v107.4h18.1v-32.3h25.5c1.7 0 3.4 0 4.9-0.2zm-50-48.6v-42.5h25.5c16.6 0 26.1 6.7 26.1 20.8 0 14.6-9.5 21.7-26.1 21.7zm-67.1-58.8h-18.1v62.9c0 18.3-10.9 29-28.3 29-17.7 0-28.9-10.9-28.9-29v-62.9h-18.1v62.9c0 28.1 17.8 45.3 46.8 45.3 29 0 46.6-17.2 46.6-45.3 0 0 0-62.9 0-62.9zm-174.4-0.7c-23.3 0-39.1 11.5-39.1 29.9 0 38.2 58 24.8 58 48.8 0 8.3-7.5 13-20.1 13-11.5 0-25.3-5.5-36.4-15.6l-7.8 15.6c11 10.1 27 17 43.9 17 23.6 0 40.5-11.8 40.5-31 0.1-38.6-57.9-26-57.9-49.5 0-7.2 7-11.2 17.5-11.2 8.2 0 19.8 2.9 31.5 10l7.5-16c-10-6.6-23.6-11-37.6-11z"/>
+	</g>
+</svg>

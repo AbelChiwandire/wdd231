@@ -1,34 +1,33 @@
 [
     {
-        "name": "Standard Bank Group",
-        "address": "5 Simmonds Street, Johannesburg, 2001, Gauteng, SA",
-        "phone": "+27 11 636 1061",
-        "website": "https://www.standardbank.com",
-        "image": "images/standard-bank.webp",
+        "name": "Santam Limited",
+        "address": "131 Dagbreek Avenue, Bellville, Western Cape, SA",
+        "phone": "0860 444 444",
+        "website": "https://www.santam.co.za",
+        "image": "images/santam.svg",
         "membershipLevel": 3
     },
     {
-        "name": "Nedbank Group",
-        "address": "135 Rivonia Road, Sandown, Sandton, 2196, Gauteng, SA",
-        "phone": "+27 11 294 4444",
-        "website": "https://www.nedbank.co.za",
-        "image": "images/nedbank.webp",
-        "membershipLevel": 2
+    "name": "FirstRand Limited",
+    "address": "4 Merchant Place, Rivonia Road, Sandton, Gauteng, SA",
+    "phone": "+27 11 282 1808",
+    "website": "https://www.firstrand.co.za",
+    "image": "images/firstrand.svg"
     },
     {
-        "name": "FirstRand Limited",
-        "address": "4 Merchant Place, Corner Fredman Drive & Rivonia Road, Sandton, 2196, Gauteng, SA",
-        "phone": "+27 11 282 1808",
-        "website": "https://www.firstrand.co.za",
-        "image": "images/firstrand.webp",
+        "name": "Telkom SA SOC Limited",
+        "address": "Telkom Park, 61 Oak Avenue, Highveld Technopark, 0157, Gauteng, SA",
+        "phone": "+27 12 311 3911",
+        "website": "https://www.telkom.co.za",
+        "image": "images/telkom.svg",
         "membershipLevel": 3
     },
     {
-        "name": "Sasol",
-        "address": "Sasol Place, 50 Katherine Street, Sandton, 2196, Gauteng, SA",
-        "phone": "+27 10 344 3060",
-        "website": "https://www.sasol.com",
-        "image": "images/sasol.webp",
+        "name": "Old Mutual Limited",
+        "address": "5th Floor, 19 Fredman Dr, Sandton, 2196, Gauteng, South Africa",
+        "phone": "0860 933 333",
+        "website": "https://www.oldmutual.co.za",
+        "image": "images/old-mutual.svg",
         "membershipLevel": 2
     },
     {
@@ -36,23 +35,31 @@
         "address": "1 Discovery Place, Sandton, 2146, Gauteng, SA",
         "phone": "0860 44 55 66",
         "website": "https://www.discovery.co.za",
-        "image": "images/discovery.webp",
+        "image": "images/discovery.svg",
         "membershipLevel": 2
     },
     {
-        "name": "MTN Group",
-        "address": "Innovation Centre, 216 14th Avenue, Fairland, Gauteng, 2195, SA",
-        "phone": "+27 83 123 0011",
-        "website": "https://www.mtn.com",
-        "image": "images/mtn.webp",
+        "name": "Sanlam Limited",
+        "address": "11 West Street, Houghton Estate, Johannesburg, Gauteng, SA",
+        "phone": "+27 11 359 7700",
+        "website": "https://www.sanlam.co.za",
+        "image": "images/sanlam.svg",
         "membershipLevel": 1
     },
     {
-        "name": "Vodacom Group",
-        "address": "Vodacom Corporate Park, 082 Vodacom Boulevard, Midrand, 1685, Gauteng, SA",
-        "phone": "+27 11 653 5000",
-        "website": "https://www.vodacom.com",
-        "image": "images/vodacom.webp",
+        "name": "Absa Group Limited",
+        "address": "7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001, Gauteng, SA",  
+        "phone": "+27 11 350 4000",
+        "website": "https://www.absa.co.za",
+        "image": "images/absa.svg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "OUTsurance Holdings",
+        "address": "2nd Floor, Block B, Waterfall City, 9 Gwen Lane, Jukskei View, 2090, Gauteng, SA",
+        "phone": "0860 70 000",
+        "website": "https://www.outsurance.co.za",
+        "image": "images/outsurance.svg",
         "membershipLevel": 1
     }
 ]
