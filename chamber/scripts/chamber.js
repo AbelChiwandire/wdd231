@@ -3,7 +3,6 @@ const members = document.querySelector('#members');
 
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
-
 const navLinks = document.querySelectorAll('nav ul li');
 
 const currentYear = document.querySelector('#currentYear');

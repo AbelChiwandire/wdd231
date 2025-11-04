@@ -8,11 +8,11 @@
         "membershipLevel": 3
     },
     {
-    "name": "FirstRand Limited",
-    "address": "4 Merchant Place, Rivonia Road, Sandton, Gauteng, SA",
-    "phone": "+27 11 282 1808",
-    "website": "https://www.firstrand.co.za",
-    "image": "images/firstrand.svg"
+        "name": "FirstRand Limited",
+        "address": "4 Merchant Place, Rivonia Road, Sandton, Gauteng, SA",
+        "phone": "+27 11 282 1808",
+        "website": "https://www.firstrand.co.za",
+        "image": "images/firstrand.svg"
     },
     {
         "name": "Telkom SA SOC Limited",
@@ -48,7 +48,7 @@
     },
     {
         "name": "Absa Group Limited",
-        "address": "7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001, Gauteng, SA",  
+        "address": "7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001, Gauteng, SA",
         "phone": "+27 11 350 4000",
         "website": "https://www.absa.co.za",
         "image": "images/absa.svg",
