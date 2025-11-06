@@ -91,10 +91,10 @@ h1 {
 .buttons button {
 	border: 1px solid #1E1A1D;
 	transition: transform 0.3s ease;
+}
 
-	&:hover {
-		transform: translateY(-3px);
-	}
+.buttons button:hover {
+	transform: translateY(-3px);
 }
 
 /*=============================== GENERIC SECTION STYLES ============================*/
