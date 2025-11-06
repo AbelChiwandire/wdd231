@@ -16,7 +16,7 @@
     },
     {
         "name": "Telkom SA SOC Limited",
-        "address": "Telkom Park, 61 Oak Avenue, Highveld Technopark, 0157, Gauteng, SA",
+        "address": "Telkom Park, 61 Oak Avenue, Highveld Technopark, Gauteng, SA",
         "phone": "+27 12 311 3911",
         "website": "https://www.telkom.co.za",
         "image": "images/telkom.svg",
@@ -48,7 +48,7 @@
     },
     {
         "name": "Absa Group Limited",
-        "address": "7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001, Gauteng, SA",
+        "address": "7th Floor, Absa Towers West, 15 Troye Street, 2001, Gauteng, SA",
         "phone": "+27 11 350 4000",
         "website": "https://www.absa.co.za",
         "image": "images/absa.svg",
@@ -56,7 +56,7 @@
     },
     {
         "name": "OUTsurance Holdings",
-        "address": "2nd Floor, Block B, Waterfall City, 9 Gwen Lane, Jukskei View, 2090, Gauteng, SA",
+        "address": "2nd Floor, Block B, 9 Gwen Lane, Jukskei View, 2090, Gauteng, SA",
         "phone": "0860 70 000",
         "website": "https://www.outsurance.co.za",
         "image": "images/outsurance.svg",
