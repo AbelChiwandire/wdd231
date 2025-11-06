@@ -3,6 +3,7 @@
 	.list,
 	header {
 		max-width: 41rem;
+		width: 100%;
 		margin: 0 auto;
 	}
 }
