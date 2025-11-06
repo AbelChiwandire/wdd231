@@ -1,7 +1,7 @@
 [
     {
         "name": "Santam Limited",
-        "address": "131 Dagbreek Avenue, Bellville, Western Cape, SA",
+        "address": "11 Alice Lane, Building 2, Sandton, Johannesburg, Gauteng, South Africa",
         "phone": "0860 444 444",
         "website": "https://www.santam.co.za",
         "image": "images/santam.svg",
@@ -9,7 +9,7 @@
     },
     {
         "name": "FirstRand Limited",
-        "address": "4 Merchant Place, Rivonia Road, Sandton, Gauteng, SA",
+        "address": "4 Merchant Place, Rivonia Road, Sandton, 2196, Gauteng, SA",
         "phone": "+27 11 282 1808",
         "website": "https://www.firstrand.co.za",
         "image": "images/firstrand.svg"
@@ -32,7 +32,7 @@
     },
     {
         "name": "Discovery Limited",
-        "address": "1 Discovery Place, Sandton, 2146, Gauteng, SA",
+        "address": "1 Discovery Place, Sandton, 2146, Gauteng, South Africa",
         "phone": "0860 44 55 66",
         "website": "https://www.discovery.co.za",
         "image": "images/discovery.svg",
