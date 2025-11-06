@@ -26,7 +26,23 @@
 		padding: 0.5rem 0.25rem;
 	}
 
+	.list {
+		max-width: 44rem;
+		margin: 0 auto;
+	}
+
 	.social-media {
 		justify-content: center;
 	}
+}
+
+@media (min-width: 59rem) {
+	.list {
+		max-width: none;
+	}
+
+	.list section {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
 }
