@@ -1,7 +1,8 @@
 @media (min-width: 41rem) {
 
 	.list,
-	header {
+	header,
+	.footer-container {
 		max-width: 41rem;
 		width: 100%;
 		margin: 0 auto;
@@ -10,7 +11,8 @@
 
 
 @media (min-width: 50.75rem) {
-	header {
+	header,
+	.footer-container {
 		max-width: none;
 	}
 
