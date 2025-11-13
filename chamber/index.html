@@ -4,43 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Member Listings</title>
+    <title>Home | Johannesburg Chamber Hub</title>
     <meta name="author" content="Abel Chiwandire">
-    <meta name="description" content="">
+    <meta name="description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="Johannesburg Chamber Home">
-    <meta property="og:description"
-        content="">
+    <meta property="og:title" content="Johannesburg Chamber Hub">
+    <meta property="og:description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
     <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/chamber/images/jch.png">
     <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/chamber/index.html">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/chamber.mjs"></script>
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
         <nav id="nav">
             <ul>
-                <li><a href="#" aria-label="Go to Home Page">Home</a></li>
-                <li id="current"><a href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li id="current"><a href="#" aria-current="page">Home</a></li>
+                <li><a href="directory.html" aria-label="View Member Directory">Directory</a></li>
                 <li><a href="#" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
                 <li><a href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <div class="hero-container">
+
+            <div class="tagline">
+                <h1>Connecting Business, <span>Building Community.</span></h1>
+                <p>Join Johannesburg's premier business network.
+                    Connect with industry leaders, access exclusive events,
+                    and grow your business in Africa's economic hub.</p>
+                <div class="cta">
+                    <a class="become" href="#">Become a Member ➜</a>
+                    <a class="learn-more" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="transition"></div>
+        <div class="cards">
+            <section id="events">
+                <h2>Upcoming Events</h2>
+            </section>
+            <section id="current-weather">
+                <h2>Current Weather</h2>
+            </section>
+            <section id="weather-forecast">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-cards" class="forecast-cards"></div>
+            </section>
+        </div>
+
+        <section class="spotlights-container">
+            <h2>Our Members</h2>
+            <p>Meet the dynamic businesses that make up Johannesburg's premier chamber of commerce</p>
+            <div class="cards" id="spotlights"></div>
+        </section>
+
+    </main>
     <footer>
         <div class="footer-container">
             <div class="contact">
@@ -66,4 +102,5 @@
         </div>
     </footer>
 </body>
+
 </html>

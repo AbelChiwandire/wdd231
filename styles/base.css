@@ -93,6 +93,24 @@ header span {
 h1 {
     margin-left: 10px;
 }
+/*==================================== DIALOG ===================================*/
+#course-details {
+    padding: 1rem;
+    max-width: 40ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 30%);
+}
+::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+
+#course-details button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);    
+}
 
 /*==================================== FOOTER ===================================*/
 footer {

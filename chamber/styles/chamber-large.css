@@ -1,19 +1,41 @@
-@media (min-width: 41rem) {
+@media (min-width: 481px) {
+    .header img {
+        height: 120px;
+    }
 
-	.list,
-	header,
-	.footer-container {
-		max-width: 41rem;
-		width: 100%;
-		margin: 0 auto;
-	}
+    .tagline {
+        top: 25%; 
+        left: 5%;
+        max-width: 70%;
+    }
+
+    .cta a {
+        width: 70%;
+        max-width: 320px;
+        padding: 1rem 2rem;
+    }
 }
 
+@media (min-width: 768px) {
 
-@media (min-width: 50.75rem) {
-	header,
-	.footer-container {
-		max-width: none;
+    .header img {
+        height: 140px;
+    }
+
+    .hero-container {
+        min-height: 700px;
+    }
+
+	.hero-bg {
+		min-height: auto;
+	}
+
+    .cta a {
+        padding: 1rem 2.5rem;
+    }
+
+	.transition {
+		margin-top: -5rem;
 	}
 
 	#hamburger {
@@ -27,6 +49,7 @@
 		justify-content: end;
 		align-items: center;
 		min-height: auto;
+		color: #fff;
 	}
 
 	#nav ul {
@@ -42,17 +65,35 @@
 		padding: 0.5rem 0.25rem;
 	}
 
+	.cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
 	.social-media {
 		justify-content: center;
 	}
 }
+@media (min-width: 900px) {
+	.list .member-card {
+		grid-template-columns: 2.5fr 3fr 2fr 2.5fr;
+	}
+}
 
-@media (min-width: 59rem) {
-	.list {
-		max-width: none;
+@media (min-width: 1024px) {
+    .tagline {
+        top: 25%; 
+		max-width: 50%;
+    }
+
+	.cta {
+		flex-direction: row;
 	}
 
-	.list section {
-		grid-template-columns: 250px 200px 200px 200px;
+	.cta a:nth-child(2){
+		display: block;
+		max-width: 200px;
 	}
+    .cards {
+        grid-template-columns: repeat(3, 1fr); 
+    }
 }

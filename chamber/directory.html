@@ -24,17 +24,17 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script src="scripts/chamber.js" defer></script>
+    <script type="module" src="scripts/chamber.mjs"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
         <nav id="nav">
             <ul>
-                <li><a href="#" aria-label="Go to Home Page">Home</a></li>
-                <li id="current"><a href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li id="current"><a href="directory.html" aria-current="page">Directory</a></li>
                 <li><a href="#" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
                 <li><a href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
                 </li>
@@ -42,14 +42,25 @@
         </nav>
     </header>
     <main>
-        <h1>Business Directory</h1>
-        <div class="buttons">
-            <button data-view="grid" aria-label="grid button"><img src="images/grid-layout.svg"
-                    alt="grid layout icon"></button>
-            <button data-view="list" aria-label="list button"><img src="images/list-layout.svg"
-                    alt="list layout icon"></button>
+        <div class="hero-container hero-bg">
+            <div class="tagline">
+                <h1>Members Directory</h1>
+                <p>Explore the people and businesses that make our community <span>thrive.</span></p>
+            </div>
         </div>
-        <div id="members" class="grid"></div>
+        <div class="buttons">
+            <div class="disc">
+                <button class="grid-button" data-view="grid" aria-label="grid button"><img src="images/grid-layout.svg"
+                alt="grid layout icon"></button>
+                <span class="disc-text">Grid Layout</span>                
+            </div>
+            <div class="disc">
+                <button class="list-button" data-view="list" aria-label="list button"><img src="images/list-layout.svg"
+                alt="list layout icon"></button>
+                <span class="disc-text">List Layout</span>                
+            </div>
+        </div>
+        <div id="members" class="cards grid"></div>
     </main>
     <footer>
         <div class="footer-container">

@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Sandton Skyline Business Gala",
+        "date": "December 12th, 2025 7:00 PM",
+        "location": "The Maslow Hotel, Sandton",
+        "price": "R850"
+    },
+    {
+        "name": "Maboneng Creative Tech Expo",
+        "date": "January 24th, 2026 10:00 AM",
+        "location": "Arts on Main, Maboneng Precinct",
+        "price": "R120"
+    },
+    {
+        "name": "Soweto Heritage Run & Market",
+        "date": "March 15th, 2026 8:00 AM",
+        "location": "Vilakazi Street, Orlando West",
+        "price": "Free Entry"
+    }
+]

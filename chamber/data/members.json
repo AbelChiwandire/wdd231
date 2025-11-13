@@ -1,65 +1,82 @@
 [
-    {
-        "name": "Santam Limited",
-        "address": "11 Alice Lane, Building 2, Sandton, Johannesburg, Gauteng, South Africa",
-        "phone": "0860 444 444",
-        "website": "https://www.santam.co.za",
-        "image": "images/santam.svg",
-        "membershipLevel": 3
-    },
-    {
-        "name": "FirstRand Limited",
-        "address": "4 Merchant Place, Rivonia Road, Sandton, 2196, Gauteng, SA",
-        "phone": "+27 11 282 1808",
-        "website": "https://www.firstrand.co.za",
-        "image": "images/firstrand.svg"
-    },
-    {
-        "name": "Telkom SA SOC Limited",
-        "address": "Telkom Park, 61 Oak Avenue, Highveld Technopark, Gauteng, SA",
-        "phone": "+27 12 311 3911",
-        "website": "https://www.telkom.co.za",
-        "image": "images/telkom.svg",
-        "membershipLevel": 3
-    },
-    {
-        "name": "Old Mutual Limited",
-        "address": "5th Floor, 19 Fredman Dr, Sandton, 2196, Gauteng, South Africa",
-        "phone": "0860 933 333",
-        "website": "https://www.oldmutual.co.za",
-        "image": "images/old-mutual.svg",
-        "membershipLevel": 2
-    },
-    {
-        "name": "Discovery Limited",
-        "address": "1 Discovery Place, Sandton, 2146, Gauteng, South Africa",
-        "phone": "0860 44 55 66",
-        "website": "https://www.discovery.co.za",
-        "image": "images/discovery.svg",
-        "membershipLevel": 2
-    },
-    {
-        "name": "Sanlam Limited",
-        "address": "11 West Street, Houghton Estate, Johannesburg, Gauteng, SA",
-        "phone": "+27 11 359 7700",
-        "website": "https://www.sanlam.co.za",
-        "image": "images/sanlam.svg",
-        "membershipLevel": 1
-    },
-    {
-        "name": "Absa Group Limited",
-        "address": "7th Floor, Absa Towers West, 15 Troye Street, 2001, Gauteng, SA",
-        "phone": "+27 11 350 4000",
-        "website": "https://www.absa.co.za",
-        "image": "images/absa.svg",
-        "membershipLevel": 3
-    },
-    {
-        "name": "OUTsurance Holdings",
-        "address": "2nd Floor, Block B, 9 Gwen Lane, Jukskei View, 2090, Gauteng, SA",
-        "phone": "0860 70 000",
-        "website": "https://www.outsurance.co.za",
-        "image": "images/outsurance.svg",
-        "membershipLevel": 1
-    }
+  {
+    "name": "Santam Limited",
+    "address": "11 Alice Lane, Building 2, Sandton, Johannesburg, Gauteng, South Africa",
+    "phone": "0860 444 444",
+    "website": "https://www.santam.co.za",
+    "image": "images/santam.svg",
+    "membershipLevel": 3,
+    "industry": "Insurance",
+    "description": "Santam is South Africa’s leading general insurer providing innovative risk solutions to individuals, businesses and agriculture sectors."
+  },
+  {
+    "name": "FirstRand Limited",
+    "address": "4 Merchant Place, Rivonia Road, Sandton, 2196, Gauteng, SA",
+    "phone": "+27 11 282 1808",
+    "website": "https://www.firstrand.co.za",
+    "image": "images/firstrand.svg",
+    "membershipLevel": 2,
+    "industry": "Finance",
+    "description": "FirstRand operates a diversified financial services portfolio across retail banking, investment and insurance in South Africa and beyond."
+  },
+  {
+    "name": "Telkom SA SOC Limited",
+    "address": "Telkom Park, 61 Oak Avenue, Highveld Technopark, Gauteng, SA",
+    "phone": "+27 12 311 3911",
+    "website": "https://www.telkom.co.za",
+    "image": "images/telkom.svg",
+    "membershipLevel": 3,
+    "industry": "Telecoms",
+    "description": "Telkom is a major South African telecommunications provider offering connectivity, digital services and enterprise solutions across Africa."
+  },
+  {
+    "name": "Old Mutual Limited",
+    "address": "5th Floor, 19 Fredman Dr, Sandton, 2196, Gauteng, South Africa",
+    "phone": "0860 933 333",
+    "website": "https://www.oldmutual.co.za",
+    "image": "images/old-mutual.svg",
+    "membershipLevel": 2,
+    "industry": "Insurance",
+    "description": "Old Mutual provides life insurance, investment and savings solutions to clients throughout South Africa and Sub-Saharan Africa."
+  },
+  {
+    "name": "Discovery Limited",
+    "address": "1 Discovery Place, Sandton, 2146, Gauteng, South Africa",
+    "phone": "0860 44 55 66",
+    "website": "https://www.discovery.co.za",
+    "image": "images/discovery.svg",
+    "membershipLevel": 2,
+    "industry": "Finance",
+    "description": "Discovery is a South African financial-services group focused on health insurance, wellness platforms and innovative customer-centred solutions."
+  },
+  {
+    "name": "Sanlam Limited",
+    "address": "11 West Street, Houghton Estate, Johannesburg, Gauteng, SA",
+    "phone": "+27 11 359 7700",
+    "website": "https://www.sanlam.co.za",
+    "image": "images/sanlam.svg",
+    "membershipLevel": 3,
+    "industry": "Finance",
+    "description": "Sanlam delivers financial planning, investment, insurance and retirement-solutions to individuals, families and corporate clients in South Africa."
+  },
+  {
+    "name": "Absa Group Limited",
+    "address": "7th Floor, Absa Towers West, 15 Troye Street, 2001, Gauteng, SA",
+    "phone": "+27 11 350 4000",
+    "website": "https://www.absa.co.za",
+    "image": "images/absa.svg",
+    "membershipLevel": 1,
+    "industry": "Banking",
+    "description": "Absa Group is a leading African financial-services organisation offering banking, lending and investment solutions across the continent."
+  },
+  {
+    "name": "OUTsurance Holdings",
+    "address": "2nd Floor, Block B, 9 Gwen Lane, Jukskei View, 2090, Gauteng, SA",
+    "phone": "0860 70 000",
+    "website": "https://www.outsurance.co.za",
+    "image": "images/outsurance.svg",
+    "membershipLevel": 1,
+    "industry": "Insurance",
+    "description": "OUTsurance provides innovative short-term insurance and risk-management services to South African consumers with an emphasis on simplicity and value."
+  }
 ]
