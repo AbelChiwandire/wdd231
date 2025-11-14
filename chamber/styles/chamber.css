@@ -171,17 +171,13 @@ body {
     background-color: #0a59a3;
 }
 
-.learn-more {
-    display: none;
-	text-shadow: none;
-    background-color: #fff;
-}
-
-.learn-more:hover {
-	color: #111;
-    font-weight: bold;
-}
-
+.learn-more { 
+	display: none;
+	color: #111; 
+	background-color: #fff; 
+	text-shadow: none; 
+	font-weight: bold;
+} 
 /*=============================== TRANSITION DIV =======================*/
 .transition {
 	position: relative;

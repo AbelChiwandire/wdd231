@@ -92,7 +92,7 @@
 		flex-direction: row;
 	}
 
-	.learn-more {
+	.cta a:nth-child(2) {
 		display: block;
 		max-width: 200px;
 	}
