@@ -4,8 +4,6 @@
     }
 
     .tagline {
-        top: 25%; 
-        left: 5%;
         max-width: 70%;
     }
 
@@ -22,12 +20,14 @@
         height: 140px;
     }
 
-    .hero-container {
-        min-height: 700px;
-    }
-
+	.hero-container,
 	.hero-bg {
-		min-height: auto;
+		padding-top: 210px;
+		padding-bottom: 150px;
+	}
+
+	.hero-container {
+		background-image: url('../images/hero-medium.webp');
 	}
 
     .cta a {
@@ -80,16 +80,19 @@
 }
 
 @media (min-width: 1024px) {
+	.hero-container {
+		background-image: url('../images/hero-large.webp');
+	}
+
     .tagline {
-        top: 25%; 
-		max-width: 50%;
+		max-width: 60%;
     }
 
 	.cta {
 		flex-direction: row;
 	}
 
-	.cta a:nth-child(2){
+	.learn-more {
 		display: block;
 		max-width: 200px;
 	}
