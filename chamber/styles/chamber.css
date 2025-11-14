@@ -379,9 +379,6 @@ h3 {
 	color: #0a59a3; 
 }
 
-.external-link:hover {
-	font-size: scale(1.1);
-}
 .external-link-icon {
 	width: 16px;
 }
