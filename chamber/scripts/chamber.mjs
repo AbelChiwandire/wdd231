@@ -1,4 +1,4 @@
-import { initializeDOM } from "./modules/domHandler.mjs";
+import { initializeDOM, fadeUp } from "./modules/domHandler.mjs";
 
 document.addEventListener('DOMContentLoaded', async () => {
     initializeDOM();
@@ -23,5 +23,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         getCurrentWeather();
         getForecast();
+    }
+
+    // Join Us page
+    if (document.querySelector('#membership-cards')) {
+        const { displayMembershipTiers } = await import('./modules/memberships.mjs');
+        const { setupMembershipModals } = await import('./modules/modals.mjs');
+        const { populateTimestamp } = await import('./modules/joinUs.mjs');
+        displayMembershipTiers();
+        setupMembershipModals();
+        populateTimestamp();
+        fadeUp();
     }
 });

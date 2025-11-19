@@ -8,9 +8,9 @@
     }
 
     .cta a {
-        width: 70%;
-        max-width: 320px;
-        padding: 1rem 2rem;
+        width: fit-content;
+        max-width: 350px;
+        padding: 1rem;
     }
 }
 
@@ -22,8 +22,11 @@
 
 	.hero-container,
 	.hero-bg {
-		padding-top: 200px;
-		padding-bottom: 150px;
+		padding-top: 180px;
+	}
+
+	.info-cards {
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.hero-container {
@@ -65,7 +68,8 @@
 		padding: 0.5rem 0.25rem;
 	}
 
-	.cards {
+	.cards,
+	.membership-cards {
         grid-template-columns: repeat(2, 1fr); 
     }
 
@@ -99,4 +103,13 @@
     .cards {
         grid-template-columns: repeat(3, 1fr); 
     }
+
+	.membership-cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.join-form {
+		padding: 2rem 5rem 5rem 5rem;
+		box-shadow: 0 5px 5px rgb(0 0 0 / 0.5);
+	}
 }

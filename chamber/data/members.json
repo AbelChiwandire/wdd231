@@ -27,7 +27,7 @@
     "image": "images/telkom.svg",
     "membershipLevel": 3,
     "industry": "Telecoms",
-    "description": "Telkom is a major South African telecommunications provider offering connectivity, digital services and enterprise solutions across Africa."
+    "description": "Telkom is a major South African telecommunications provider offering connectivity, digital services and enterprise solutions."
   },
   {
     "name": "Old Mutual Limited",
@@ -47,7 +47,7 @@
     "image": "images/discovery.svg",
     "membershipLevel": 2,
     "industry": "Finance",
-    "description": "Discovery is a South African financial-services group focused on health insurance, wellness platforms and innovative customer-centred solutions."
+    "description": "Discovery is a South African financial-services group focused on health insurance, wellness platforms and customer-centred solutions."
   },
   {
     "name": "Sanlam Limited",

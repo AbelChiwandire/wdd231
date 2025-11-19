@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannesburg Chamber Hub | JOIN</title>
+    <meta name="author" content="Abel Chiwandire">
+    <meta name="description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
+
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="Johannesburg Chamber Hub">
+    <meta property="og:description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
+    <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/chamber/images/jch.png">
+    <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/chamber/index.html">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script type="module" src="scripts/chamber.mjs"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
+        <button id="hamburger" aria-label="hamburger menu"></button>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li><a href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li id="current"><a href="#"  aria-current="page">Join</a></li>
+                <li><a href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-bg">
+
+            <div class="tagline">
+                <h1>Join the Chamber. <br><span>Shape the Future.</span></h1>
+                <p>Connect with Johannesburg's most innovative business leaders, access exclusive opportunities,
+                    and accelerate your growth in South Africa's economic powerhouse.</p>
+                <div class="cta">
+                    <a class="become" href="#membership-tiers">
+                        Explore Memberships
+                        <svg class="feather feather-arrow-right" fill="none" height="24"
+                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="5" x2="19" 
+                        y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                    <a class="learn-more" href="#application-form">Apply Now</a>
+                </div>
+            </div>
+
+            <div class="info-cards">
+
+                <div class="info-card">
+                    <p>500+</p>
+                    <p>Active Members</p>
+                </div>
+
+                <div class="info-card">
+                    <p>R2.5B</p>
+                    <p>Business Value</p>
+                </div>
+
+                <div class="info-card">
+                    <p>50+</p>
+                    <p>Annual Events</p>
+                </div>
+
+                <div class="info-card">
+                    <p>15+</p>
+                    <p>Years of impact</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section id="membership-tiers" class="memberships">
+            <h2 class="fade-up">Choose Your Path To Success</h2>
+            <p>Every membership tier unlocks opportunities to grow, connect, and thrive in Johannesburg's vibrant business landscape.</p>
+
+            <section id="membership-cards" class="membership-cards"></section>
+        </section>
+
+        <section class="form-section">
+            <div class="form-section-heading">
+                <h2 class="fade-up">Ready to Join?</h2>
+                <p>Complete the form below and we'll be in touch within 24 hours</p>
+            </div>
+
+            <form method="get" action="thankyou.html" id="application-form" class="join-form">
+                <label class="fade-up" for="first-name">First name <span>*</span>  
+                    <input type="text" id="first-name" name="first-name" title="Applicant's first name" placeholder="Enter your first name" autocomplete="given-name" required>
+                </label>
+
+                <label class="fade-up" for="last-name">Last name <span>*</span> 
+                    <input type="text" id="last-name" name="last-name" title="Applicant's last name" placeholder="Enter your last name" autocomplete="family-name" required>
+                </label>
+
+                <label class="fade-up" for="organizational-title">Organizational title
+                    <input type="text" id="organizational-title" name="organizational-title" title="Organizational title (letters, hyphens and spaces only, min 7 characters)" placeholder="e.g. Executive Director" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
+                </label>
+
+                <label for="email">Email address <span>*</span> 
+                    <input type="email" id="email" name="email" title="Applicant email address" placeholder="name@example.com" autocomplete="email" required>
+                </label>
+
+                <label for="phone">Mobile phone <span>*</span> 
+                    <input type="tel" id="phone" name="phone" title="Applicant mobile phone" placeholder="+27 11 123 4567" autocomplete="tel" required>
+                </label>
+
+                <label for="organization-name">Organization name <span>*</span> 
+                    <input type="text" id="organization-name" name="organization" title="Business or organization name" placeholder="Enter organization name" autocomplete="organization" required>
+                </label>
+
+                <label for="membership-level">Membership level <span>*</span> 
+                    <select id="membership-level" name="membership" title="Select membership level" required>
+                        <option value="" selected disabled hidden>Choose a tier</option>
+                        <option value="np">NP Membership (non-profit, no fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Organization description
+                    <textarea id="description" name="description" title="Brief description of the organization" rows="5" placeholder="Tell us about your organization and what you do"></textarea>
+                </label>
+
+                <!-- timestamp populated by script when form loads -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <input type="submit" value="Send Application">
+            </form>
+
+        </section>
+
+        <dialog id="membership-modal">
+            <div class="modal-container">
+                <button class="modal-close" aria-label="Close modal"></button>
+                <h2 class="modal-title"></h2>
+                <p class="modal-description"></p>
+                <h3 class="features-header"></h3>
+                <ul class="modal-features"></ul>
+                <a href="#application-form" class="tier-btn" autofocus>
+                    Apply Now
+                    <svg class="feather feather-arrow-right" fill="none" height="24"
+                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="5" x2="19" 
+                    y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+        </dialog>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+
+            <div class="contact">
+                <p><span class="name">Johannesburg Chamber Hub</span></p>
+                <p>3 Dan Street Florida</p>
+                <p>info@johannesburgchamberhub.org</p>
+                <p>+27 123 456 7891</p>
+            </div>
+
+            <div class="social-media">
+                <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
+                        alt="WDD231 Github Repository" width="22" height="22"></a>
+                <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
+                        src="images/linkedin.svg" alt="Abel's LinkedIn Profile" width="22" height="22"></a>
+                <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
+                        alt="Abel's Instagram Profile" width="22" height="22"></a>
+            </div>
+
+            <div class="project">
+                <p>WDD 231 Class Project</p>
+                <p>Abel Chiwandire</p>
+                <p><span id="currentYear"></span> Johannesburg Chamber Hub</p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
