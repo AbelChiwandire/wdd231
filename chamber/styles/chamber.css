@@ -157,6 +157,12 @@ dialog a {
     font-size: var(--font-medium);
 }
 
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif;
+}
+
 /*==================================== HEADER ==================================*/
 header {
 	position: absolute;
