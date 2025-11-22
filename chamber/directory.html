@@ -28,49 +28,60 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="flex justify-between w-full">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
-        <nav id="nav">
-            <ul>
-                <li><a href="index.html" aria-label="Go to Home Page">Home</a></li>
-                <li id="current"><a href="directory.html" aria-current="page">Directory</a></li>
-                <li><a href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
-                <li><a href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
+        <nav id="nav" class="w-full p-lg">
+            <ul class="flex gap-md flex-container">
+                <li><a class="p-sm" href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li id="current"><a class="p-sm" href="#" aria-current="page">Directory</a></li>
+                <li><a class="p-sm" href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
+                <li><a class="p-sm" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
+
         <div class="hero-bg">
-            <div class="tagline">
+
+            <div class="tagline flex-center m-center p-md text-center">
                 <h1>Members Directory</h1>
-                <p>Explore the people and businesses that make our community <span>thrive.</span></p>
+                <p class="fs-clamp">Explore the people and businesses that make our community <span>thrive.</span></p>
             </div>
+
         </div>
-        <div class="buttons">
+
+        <div class="buttons flex flex-center gap-md mt-lg mb-lg">
+
             <div class="disc">
                 <button class="grid-button" data-view="grid" aria-label="grid button"><img src="images/grid-layout.svg"
                 alt="grid layout icon"></button>
-                <span class="disc-text">Grid Layout</span>                
+                <span class="disc-text text-center p-sm">Grid Layout</span>                
             </div>
+
             <div class="disc">
                 <button class="list-button" data-view="list" aria-label="list button"><img src="images/list-layout.svg"
                 alt="list layout icon"></button>
-                <span class="disc-text">List Layout</span>                
+                <span class="disc-text text-center p-sm">List Layout</span>                
             </div>
+
         </div>
-        <div id="members" class="cards grid"></div>
+
+        <div id="members" class="cards grid gap-md"></div>
+
     </main>
-    <footer>
-        <div class="footer-container">
+    <footer class="mt-lg">
+        <div class="p-lg m-center p-md gap-md footer-container">
+
             <div class="contact">
-                <p><span class="name">Johannesburg Chamber Hub</span></p>
-                <p>3 Dan Street Florida</p>
-                <p>info@johannesburgchamberhub.org</p>
-                <p>+27 123 456 7891</p>
+                <p class="mb-sm"><span class="name">Johannesburg Chamber Hub</span></p>
+                <p class="mb-sm">3 Dan Street Florida</p>
+                <p class="mb-sm">info@johannesburgchamberhub.org</p>
+                <p class="mb-sm">+27 123 456 7891</p>
             </div>
-            <div class="social-media">
+
+            <div class="social-media flex gap-md">
                 <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
                         alt="WDD231 Github Repository" width="22" height="22"></a>
                 <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
@@ -78,12 +89,14 @@
                 <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
                         alt="Abel's Instagram Profile" width="22" height="22"></a>
             </div>
+
             <div class="project">
-                <p>WDD 231 Class Project</p>
-                <p>Abel Chiwandire</p>
-                <p><span id="currentYear"></span> Johannesburg Chamber Hub</p>
-                <p id="lastModified"></p>
+                <p class="mb-sm">WDD 231 Class Project</p>
+                <p class="mb-sm">Abel Chiwandire</p>
+                <p class="mb-sm"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
+                <p class="mb-sm" id="lastModified"></p>
             </div>
+
         </div>
     </footer>
 </body>

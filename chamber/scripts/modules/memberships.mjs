@@ -74,11 +74,12 @@ export function displayMembershipTiers ()
 
     membershipTiers.forEach(tier => {
         const section = document.createElement('section');
-        section.classList.add('tier-section', 'fade-up');
+        section.classList.add('tier-section', 'fade-up', 'card');
         section.id = tier.id;
 
         const h2 = document.createElement('h2');
         h2.textContent = tier.name;
+        h2.classList.add('mt-md');
 
         const price = document.createElement('p');
         price.textContent = tier.price;
@@ -100,6 +101,7 @@ export function displayMembershipTiers ()
 
         for(let i = 0; i < 3 && i < tier.features.length; i++){
             const li = document.createElement('li');
+            li.classList.add('ml-md');
             li.textContent = tier.features[i];
             features.appendChild(li);
         };
@@ -107,7 +109,7 @@ export function displayMembershipTiers ()
         const featuresLeft = document.createElement('p');
         featuresLeft.textContent = `+${tier.features.length - 3} more benefits`;
 
-        const navLink = document.createElement('a');
+        const navLink = document.createElement('button');
         navLink.innerHTML = `
             Learn More
             <svg class="feather feather-arrow-right" fill="none" height="24"
@@ -115,9 +117,8 @@ export function displayMembershipTiers ()
             viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="5" x2="19" 
             y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         `;
-        navLink.href = '#form';
-        navLink.setAttribute('aria-label', 'Apply for membership');
-        navLink.classList.add('tier-btn');
+        navLink.setAttribute(`aria-label`, `More information about the ${tier.name}`);
+        navLink.classList.add('tier-btn', 'flex', 'justify-between', 'mt-md');
         
         section.append(h2, price, tagline, features, featuresLeft, navLink);
         tiersSection.appendChild(section);

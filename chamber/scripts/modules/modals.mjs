@@ -10,30 +10,34 @@ export function setupMembershipModals() {
     const modalClose = modal.querySelector('.modal-close');
     const applyNow = modal.querySelector('.tier-btn');
 
-    // Open modal when a card section is clicked
-    document.querySelectorAll('.tier-section').forEach(section => {
-        section.addEventListener('click', event => {
-            const cardSection = event.currentTarget; 
-            const tierId = cardSection.id; 
-            const tierData = membershipTiers.find(t => t.id === tierId);
+    document.addEventListener('click', event => {
+        const btn = event.target.closest('.tier-btn');
+        if (!btn) return;
 
-            // Fill modal content
-            modalTitle.textContent = `About This Membership`;
-            modalDescription.textContent = tierData.description;
+        // find the parent tier-section to read its id
+        const section = btn.closest('.tier-section');
+        if (!section) return;
 
-            featureHeader.textContent = `Benefits and Features`;
+        const tierId = section.id;
+        const tierData = membershipTiers.find(t => t.id === tierId);
 
-            // Clear previous feature list
-            modalFeatures.innerHTML = '';
-            tierData.features.forEach(feature => {
-                const li = document.createElement('li');
-                li.textContent = feature;
-                modalFeatures.appendChild(li);
-            });
+        // Fill modal content
+        modalTitle.textContent = `About This Membership`;
+        modalDescription.textContent = tierData.description;
 
-            // Show the modal
-            modal.showModal();
+        featureHeader.textContent = `Benefits and Features`;
+
+        // Clear previous feature list
+        modalFeatures.innerHTML = '';
+        (tierData.features).forEach(feature => {
+            const li = document.createElement('li');
+            li.classList.add('mb-sm');
+            li.textContent = feature;
+            modalFeatures.appendChild(li);
         });
+
+        // Show the modal
+        modal.showModal();
     });
 
     // Close modal button

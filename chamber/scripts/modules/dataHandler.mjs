@@ -20,7 +20,7 @@ export function displayMembers() {
         linkWrapper.setAttribute('aria-label', `Visit ${member.name} official website`);
 
         const card = document.createElement('section');
-        card.classList.add('member-card');
+        card.classList.add('member-card', 'card', 'flex-center', 'text-center');
 
         const name = document.createElement('h3');
         name.textContent = member.name;
@@ -37,7 +37,7 @@ export function displayMembers() {
         phone.textContent = member.phone;
 
         const site = document.createElement('p');
-        site.classList.add('external-link');
+        site.classList.add('external-link', 'flex', 'gap-sm');
         site.innerHTML = `
             ${member.website}
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -79,7 +79,7 @@ export function displaySpotLights() {
 
         // The inner card layout
         const card = document.createElement('div');
-        card.classList.add('spotlight-card');
+        card.classList.add('spotlight-card', 'card', 'flex-center', 'text-center');
 
         const img = document.createElement('img');
         img.src = member.image;
@@ -91,9 +91,10 @@ export function displaySpotLights() {
 
         const desc = document.createElement('p');
         desc.textContent = member.description;
+        desc.classList.add('flex-grow');
 
         const linkText = document.createElement('span');
-        linkText.classList.add('external-link');
+        linkText.classList.add('external-link', 'flex', 'gap-sm');
 
         linkText.innerHTML = `
             View site
@@ -128,10 +129,11 @@ function displayEvents(eventsArr) {
 
     eventsArr.forEach(event => {
         const eventDiv = document.createElement('div');
-        eventDiv.classList.add('event-card');
+        eventDiv.classList.add('event-card', 'px-md');
 
         const name = document.createElement('h3');
         name.textContent = event.name;
+        name.classList.add('mb-md');
 
         const date = document.createElement('p');
         date.textContent = `${event.date}`;

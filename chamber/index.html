@@ -28,74 +28,74 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="flex justify-between w-full">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
-        <nav id="nav">
-            <ul>
-                <li id="current"><a href="#" aria-current="page">Home</a></li>
-                <li><a href="directory.html" aria-label="View Member Directory">Directory</a></li>
-                <li><a href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
-                <li><a href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
+        <nav id="nav" class="w-full p-lg">
+            <ul class="flex gap-md flex-container">
+                <li id="current"><a class="p-sm" href="#" aria-current="page">Home</a></li>
+                <li><a class="p-sm" href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li><a class="p-sm" href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
+                <li><a class="p-sm" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
                 </li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <main>
-        <div class="hero-container">
+        <div class="hero-container w-full">
 
-            <div class="tagline">
-                <h1>Connecting Business, <span>Building Community.</span></h1>
-                <p>Join Johannesburg's premier business network.
+            <div class="tagline p-md ml-md">
+                <h1 class="mb-md">Connecting Business, <span>Building Community.</span></h1>
+                <p class="mb-md fs-clamp">Join Johannesburg's premier business network.
                     Connect with industry leaders, access exclusive events,
                     and grow your business in Africa's economic hub.</p>
-                <div class="cta">
-                    <a class="become" href="join.html#application-form">Become a Member ➜</a>
-                    <a class="learn-more" href="#">Learn More</a>
+                <div class="flex flex-container gap-md">
+                    <a class="cta p-md flex gap-sm explore" href="join.html#application-form">Become a Member ➜</a>
+                    <a class="cta p-md learn-more" href="#">Learn More</a>
                 </div>
             </div>
 
         </div>
 
-        <div class="transition"></div>
+        <div class="transition w-full"></div>
 
-        <div class="cards">
+        <div class="p-lg cards gap-md">
 
-            <section id="events">
-                <h2>Upcoming Events</h2>
+            <section id="events" class="card">
+                <h2 class="text-center">Upcoming Events</h2>
             </section>
 
-            <section id="current-weather">
-                <h2>Current Weather</h2>
+            <section id="current-weather" class="card">
+                <h2 class="text-center mb-md">Current Weather</h2>
             </section>
 
-            <section id="weather-forecast">
-                <h2>Weather Forecast</h2>
+            <section id="weather-forecast" class="card">
+                <h2 class="text-center mb-md">Weather Forecast</h2>
                 <div id="forecast-cards" class="forecast-cards"></div>
             </section>
 
         </div>
 
-        <section class="spotlights-container">
-            <h2>Our Members</h2>
-            <p>Meet the dynamic businesses that make up Johannesburg's premier chamber of commerce</p>
+        <section class="p-lg spotlights-container">
+            <h2 class="text-center">Our Members</h2>
+            <p class="text-center mb-lg fs-clamp">Meet the dynamic businesses that make up Johannesburg's premier chamber of commerce</p>
 
-            <div class="cards" id="spotlights"></div>
+            <div id="spotlights" class="cards gap-md"></div>
 
         </section>
 
     </main>
-    <footer>
-        <div class="footer-container">
+    <footer class="mt-lg">
+        <div class="p-lg m-center p-md gap-md footer-container">
 
             <div class="contact">
-                <p><span class="name">Johannesburg Chamber Hub</span></p>
-                <p>3 Dan Street Florida</p>
-                <p>info@johannesburgchamberhub.org</p>
-                <p>+27 123 456 7891</p>
+                <p class="mb-sm"><span class="name">Johannesburg Chamber Hub</span></p>
+                <p class="mb-sm">3 Dan Street Florida</p>
+                <p class="mb-sm">info@johannesburgchamberhub.org</p>
+                <p class="mb-sm">+27 123 456 7891</p>
             </div>
 
-            <div class="social-media">
+            <div class="social-media flex gap-md">
                 <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
                         alt="WDD231 Github Repository" width="22" height="22"></a>
                 <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
@@ -105,10 +105,10 @@
             </div>
 
             <div class="project">
-                <p>WDD 231 Class Project</p>
-                <p>Abel Chiwandire</p>
-                <p><span id="currentYear"></span> Johannesburg Chamber Hub</p>
-                <p id="lastModified"></p>
+                <p class="mb-sm">WDD 231 Class Project</p>
+                <p class="mb-sm">Abel Chiwandire</p>
+                <p class="mb-sm"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
+                <p class="mb-sm" id="lastModified"></p>
             </div>
 
         </div>
