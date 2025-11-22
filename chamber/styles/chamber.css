@@ -2,78 +2,137 @@
 	scroll-behavior: smooth;
 
     /* solid colors */
-    --clr-primary: rgb(10, 89, 163);
-    --clr-text: rgb(30, 26, 29);
-    --clr-white: rgb(255, 255, 255);
-    --clr-dark: rgb(0, 4, 18);
-    --clr-text-dark: rgb(17, 17, 17);
-    --clr-accent: rgb(130, 12, 151);
+    --color-primary: rgb(10, 89, 163);
+    --color-text-main: rgb(30, 26, 29);
+    --color-white: rgb(255, 255, 255);
+    --color-surface-dark: rgb(0, 4, 18);
+    --color-text-dark: rgb(17, 17, 17);
+    --color-accent: rgb(130, 12, 151);
 
     /* alpha colors */
-    --hdr-bg: rgba(0, 0, 0, 0.3);
+    --header-background: rgba(0, 0, 0, 0.3);
 
-    /* Spacing / radii */
-    --space-sm: 0.5rem;  
-    --space-md: 1rem;
-    --space-lg: 2rem;  
-    --radius-md: 8px;    
-    
-    /* Font sizes */
-    --font-sm: 0.9rem;
-    --font-nml: 1rem;
-    --font-md: 1.5rem;
-    --font-lg: 2.5rem;
+    /* spacing & radii */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --radius-medium: 8px;
 
-    /* Gradient tokens */
-    --nav-bg: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgba(0, 4, 18, 0.8));
-    --hero-bg-image-overlay: linear-gradient(
+    /* font sizes */
+    --font-small: 0.9rem;
+    --font-regular: 1rem;
+    --font-medium: 1.5rem;
+    --font-large: 2.5rem;
+
+    /* gradient tokens */
+    --nav-background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgba(0, 4, 18, 0.8));
+    --hero-overlay-gradient: linear-gradient(
       to bottom right,
       rgba(0, 4, 18, 1) 0%,
       rgba(0, 4, 18, 0.6) 70%,
       rgba(0, 4, 18, 0) 100%
     );
-    --hero-radial-1: radial-gradient(600px circle at 80% 20%, rgba(186, 104, 200, 0.15), transparent 70%);
-    --hero-radial-2: radial-gradient(600px circle at 20% 80%, rgb(10, 89, 163, 0.15), transparent 70%);
-    --transition-grad: linear-gradient(to top, rgb(255, 255, 255) 67%, transparent 100%);
+    --hero-radial-a: radial-gradient(600px circle at 80% 20%, rgba(186, 104, 200, 0.15), transparent 70%);
+    --hero-radial-b: radial-gradient(600px circle at 20% 80%, rgb(10, 89, 163, 0.15), transparent 70%);
+    --transition-gradient: linear-gradient(to top, rgb(255, 255, 255) 67%, transparent 100%);
 }
 
-/*===================================== UTILITIES ==============================*/
-.pos-rel {position: relative;}
-.text-center {text-align: center;}
-.fs-clamp {font-size: clamp(1.1rem, 2.5vw, 1.6rem);}
+/*===================================== UTILITIES =====================================*/
 
-/* Flex utilities */
-.flex { display: flex; }
-.flex-container { flex-direction: column; }
-.flex-center { justify-content: center; align-items: center; }
-.justify-between { justify-content: space-between; }
-.flex-grow {flex-grow: 1;}
-.gap-sm { gap: var(--space-sm); }
-.gap-md { gap: var(--space-md); }
+/* general */
+.align-text-center {
+	 text-align: center;
+}
 
-/* Spacing utilities */
-.w-full {width: 100%}
+.responsive-font { 
+	font-size: clamp(1.1rem, 2.5vw, 1.6rem); 
+}
 
-.m-center { margin: 0 auto; }
-.mt-md { margin-top: var(--space-md); }
-.mt-lg { margin-top: var(--space-lg); }
-.mb-sm { margin-bottom: var(--space-sm); }
-.mb-md { margin-bottom: var(--space-md); }
-.mb-lg { margin-bottom: var(--space-lg);}
-.ml-md { margin-left: var(--space-md);}
+/* flex */
+.flex-layout { 
+	display: flex; 
+}
 
-.p-sm { padding: var(--space-sm); }
-.p-md { padding: var(--space-md); }
-.p-lg { padding: var(--space-lg); }
-.px-md { padding: 0.5rem 1rem; }
+.flex-container { 
+	flex-direction: column; 
+}
 
+.flex-centered { 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.flex-spread { 
+	justify-content: space-between; 
+}
+
+.flex-expand { 
+	flex-grow: 1; 
+}
+
+.flex-gap-small { 
+	gap: var(--spacing-small); 
+}
+
+.flex-gap-medium { 
+	gap: var(--spacing-medium); 
+}
+
+/* spacing */
+.full-width { 
+	width: 100%; 
+}
+
+.center-block { 
+	margin: 0 auto; 
+}
+
+.margin-top-medium { 
+	margin-top: var(--spacing-medium); 
+}
+
+.margin-top-large { 
+	margin-top: var(--spacing-large); 
+}
+
+.margin-bottom-small { 
+	margin-bottom: var(--spacing-small); 
+}
+
+.margin-bottom-medium { 
+	margin-bottom: var(--spacing-medium); 
+}
+
+.margin-bottom-large { 
+	margin-bottom: var(--spacing-large); 
+}
+
+.margin-left-medium { 
+	margin-left: var(--spacing-medium); 
+}
+
+.padding-small { 
+	padding: var(--spacing-small); 
+}
+
+.padding-medium { 
+	padding: var(--spacing-medium); 
+}
+
+.padding-large { 
+	padding: var(--spacing-large); 
+}
+
+.padding-horizontal-medium { 
+	padding: 0.5rem 1rem; 
+}
 /*===================================== HTML ====================================*/
 html,
 body {
 	display: flex;
 	flex-direction: column;
 	font-family: Roboto, sans-serif;
-	color: var(--clr-text);
+	color: var(--color-text-main);
 }
 
 /*================================= MAIN ==========================*/
@@ -85,18 +144,19 @@ h2,
 h3,
 .learn-more,
 .day {
-	color: var(--clr-text-dark); 
+	color: var(--color-text-dark); 
 }
 
 h2,
 .price {
-    font-size: var(--font-lg);
+    font-size: var(--font-large);
 }
 
 .modal-title,
 dialog a {
-    font-size: var(--font-md);
+    font-size: var(--font-medium);
 }
+
 /*==================================== HEADER ==================================*/
 header {
 	position: absolute;
@@ -104,25 +164,25 @@ header {
 	z-index: 100;
 
 	padding: 0 1rem;
-	background: var(--hdr-bg);
+	background: var(--header-background);
 	backdrop-filter: blur(6px);
 }
 
 /*========================================= HAMBURGER =================================*/
 #hamburger {
-	margin-right: var(--space-md);
+	margin-right: var(--spacing-medium);
 }
 
 #hamburger::before {
 	content: '≡';
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: var(--font-lg);
+	font-size: var(--font-large);
 }
 
 #hamburger.active::before,
 dialog button::after {
 	content: '✕';
-	font-size: var(--font-md);
+	font-size: var(--font-medium);
 }
 
 /*================================== NAVIGATION ==================================*/
@@ -130,8 +190,8 @@ dialog button::after {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	background: var(--nav-bg);
-	color: var(--clr-text);
+	background: var(--nav-background);
+	color: var(--color-text-main);
 	min-height: 100vh;
 	display: none;
 }
@@ -167,34 +227,20 @@ dialog button::after {
 }
 
 /*================================= HERO ==========================*/
-/*
-.hero-container {
-    background-image: url('../images/hero-small.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    
-    padding-top: 160px;
-    padding-bottom: 90px;
-
-    position: relative; 
-}
-*/
 .hero-container::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: var(--hero-bg-image-overlay);
+    background: var(--hero-overlay-gradient);
     pointer-events: none;
     z-index: 0;
 }
 
 .hero-bg {
     background:
-        var(--hero-radial-1),
-        var(--hero-radial-2),
-        var(--clr-dark);          
+        var(--hero-radial-a),
+        var(--hero-radial-b),
+        var(--color-surface-dark);          
     padding-top: 160px;      
     padding-bottom: 100px;   
 }
@@ -220,15 +266,15 @@ h1 {
 }
 
 .cta {
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-medium);
     max-width: 300px;
-    font-size: var(--font-md);
+    font-size: var(--font-medium);
 }
 
 .explore,
 input[type=submit],
 .disc-text {
-    background-color: var(--clr-primary);
+    background-color: var(--color-primary);
 }
 
 /*=============================== TRANSITION DIV =======================*/
@@ -236,7 +282,7 @@ input[type=submit],
 	position: relative;
     height: 100px;
 	margin-top: -3rem;
-    background: var(--transition-grad);
+    background: var(--transition-gradient);
 	z-index: 20;
 }
 
@@ -252,25 +298,25 @@ input[type=submit],
     height: 100%;
 	max-width: 450px;
 	margin: 0 auto;
-	border-radius: var(--radius-md);
+	border-radius: var(--radius-medium);
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	padding: var(--space-md);
+	padding: var(--spacing-medium);
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-sm);
+	gap: var(--spacing-small);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cards h2 {
-	font-size: var(--font-md);
+	font-size: var(--font-medium);
 	font-weight: 600;
-	padding-bottom: var(--space-sm);
+	padding-bottom: var(--spacing-small);
 }
 
 .card h3,
 .day {
-	font-size: var(--font-nml);
-}
+	font-size: var(--font-regular);
+} 
 
 .cards section:hover,
 .tier-section:hover {
@@ -292,7 +338,7 @@ input[type=submit],
 
 .event-card p,
 .min-text {
-	font-size: var(--font-sm);
+	font-size: var(--font-small);
 }
 
 .event-card:hover,
@@ -354,7 +400,7 @@ select,
 textarea,
 input[type=submit],
 .disc-text {
-	border-radius: var(--radius-md);
+	border-radius: var(--radius-medium);
 }
 
 /*============================== SPOTLIGHTS SECTION ==============================*/
@@ -370,12 +416,12 @@ input[type=submit],
 /*=== COLORS === */
 .spotlight-card p:first-of-type,
 .external-link {
-	color: var(--clr-primary);
+	color: var(--color-primary);
 }
 
 .weather-card img,
 .learn-more {
-    background-color: var(--clr-white);
+    background-color: var(--color-white);
 }
 
 .external-link:hover,
@@ -392,33 +438,33 @@ header,
 input[type=submit],
 .disc-text,
 footer {
-	color: var(--clr-white);
+	color: var(--color-white);
 }
 
 #np,
 #gold {
-	border-top: 8px solid var(--clr-accent);
+	border-top: 8px solid var(--color-accent);
 
 	.price,
 	.features-list li::marker,
 	p:last-of-type,
-	.tier-btn {color: var(--clr-accent);}
+	.tier-btn {color: var(--color-accent);}
 }
 
 #bronze,
 #silver {
-	border-top: 8px solid var(--clr-primary);
+	border-top: 8px solid var(--color-primary);
 
 	.price,
 	.features-list li::marker,
 	p:last-of-type,
-	.tier-btn {color: var(--clr-primary);}
+	.tier-btn {color: var(--color-primary);}
 }
 
 dialog ul li::marker,
 .tier-btn,
 .modal-close,
-.join-form span {color: var(--clr-accent);}
+.join-form span {color: var(--color-accent);}
 
 /* INFO GRID */
 .info-grid {
@@ -561,8 +607,8 @@ input[type=submit] {
 }
 
 .list .member-card {
-	gap: var(--space-md);
-	padding: var(--space-lg);
+	gap: var(--spacing-medium);
+	padding: var(--spacing-large);
 }
 
 .list .member-card h3 {
@@ -577,7 +623,7 @@ input[type=submit] {
 
 /*=============================== FOOTER ===========================*/
 footer {
-	background-color: var(--clr-dark);
+	background-color: var(--color-surface-dark);
 }
 
 .footer-container {

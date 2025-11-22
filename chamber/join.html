@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johannesburg Chamber Hub | JOIN</title>
+    <title>Johannesburg Chamber Hub | Join the Chamber</title>
     <meta name="author" content="Abel Chiwandire">
-    <meta name="description" content="">
+    <meta name="description" content="Join the Chamber: Choose Non-Profit, Silver, or Gold membership for listings, training, events and more">
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="Johannesburg Chamber Hub">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Johannesburg Chamber Hub | Join Us">
+    <meta property="og:description" content="Join the Chamber: Choose Non-Profit, Silver, or Gold membership for listings, training, events and more">
     <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/chamber/images/jch.png">
     <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/chamber/join.html">
 
@@ -28,39 +28,38 @@
 </head>
 
 <body>
-    <header class="flex justify-between w-full">
+    <header class="flex-layout flex-spread full-width">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
-        <nav id="nav" class="w-full p-lg">
-            <ul class="flex gap-md flex-container">
-                <li><a class="p-sm" href="index.html" aria-label="Go to Home Page">Home</a></li>
-                <li><a class="p-sm" href="directory.html" aria-label="View Member Directory">Directory</a></li>
-                <li id="current"><a class="p-sm" href="#"  aria-current="page">Join</a></li>
-                <li><a class="p-sm" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
-                </li>
+        <nav id="nav" class="full-width padding-large">
+            <ul class="flex-layout flex-gap-medium flex-container">
+                <li><a class="padding-small" href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li><a class="padding-small" href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li id="current"><a class="padding-small" href="join.html" aria-current="page">Join</a></li>
+                <li><a class="padding-small" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero-bg mb-lg">
+        <div class="hero-bg margin-bottom-large">
 
-            <div class="tagline flex-center m-center p-md text-center">
-                <h1 class="mb-md">Join the Chamber. <br><span>Shape the Future.</span></h1>
-                <p class="mb-md fs-clamp">Connect with Johannesburg's most innovative business leaders, access exclusive opportunities,
+            <div class="tagline flex-centered center-block padding-medium align-text-center">
+                <h1 class="margin-bottom-medium">Join the Chamber. <br><span>Shape the Future.</span></h1>
+                <p class="margin-bottom-medium responsive-font">Connect with Johannesburg's most innovative business leaders, access exclusive opportunities,
                     and accelerate your growth in South Africa's economic powerhouse.</p>
-                <div class="flex flex-container flex-center gap-md mt-lg">
-                    <a class="cta p-md flex gap-sm explore" href="#membership-tiers">
+                <div class="flex-layout flex-container flex-centered flex-gap-medium margin-top-large">
+                    <a class="cta padding-medium flex-layout flex-gap-small explore" href="#membership-tiers">
                         Explore Memberships
                         <svg class="feather feather-arrow-right" fill="none" height="24"
                         stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                         viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="5" x2="19" 
                         y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                     </a>
-                    <a class="cta p-md learn-more" href="#application-form">Apply Now</a>
+                    <a class="cta padding-medium learn-more" href="#application-form">Apply Now</a>
                 </div>
             </div>
 
-            <div class="text-center info-grid mt-lg">
+            <div class="align-text-center info-grid margin-top-large">
 
                 <div>
                     <p>500+</p>
@@ -86,44 +85,44 @@
 
         </div>
 
-        <section id="membership-tiers" class="p-lg memberships">
-            <h2 class="fade-up text-center">Choose Your Path To Success</h2>
-            <p class="text-center mb-lg fs-clamp">Every membership tier unlocks opportunities to grow, connect, and thrive in Johannesburg's vibrant business landscape.</p>
+        <section id="membership-tiers" class="padding-large memberships">
+            <h2 class="fade-up align-text-center">Choose Your Path To Success</h2>
+            <p class="align-text-center margin-bottom-large responsive-font">Every membership tier unlocks opportunities to grow, connect, and thrive in Johannesburg's vibrant business landscape.</p>
 
-            <section id="membership-cards" class="cards gap-md membership-cards"></section>
+            <section id="membership-cards" class="cards flex-gap-medium membership-cards"></section>
         </section>
 
-        <section class="form-section mt-lg p-lg">
-                <h2 class="text-center fade-up">Ready to Join?</h2>
-                <p class="text-center fs-clamp mb-lg">Complete the form below and we'll be in touch within 24 hours</p>
+        <section class="form-section margin-top-large padding-large">
+            <h2 class="align-text-center fade-up">Ready to Join?</h2>
+            <p class="align-text-center responsive-font margin-bottom-large">Complete the form below and we'll be in touch within 24 hours</p>
 
-            <form method="get" action="thankyou.html" id="application-form" class="join-form flex flex-container gap-md m-center mb-lg">
+            <form method="get" action="thankyou.html" id="application-form" class="join-form flex-layout flex-container flex-gap-medium center-block margin-bottom-large">
                 <label class="fade-up" for="first-name">First name <span>*</span>  
-                    <input class="w-full p-md" type="text" id="first-name" name="first-name" title="Applicant's first name" placeholder="Enter your first name" autocomplete="given-name" required>
+                    <input class="full-width padding-medium" type="text" id="first-name" name="first-name" title="Applicant's first name" placeholder="Enter your first name" autocomplete="given-name" required>
                 </label>
 
                 <label class="fade-up" for="last-name">Last name <span>*</span> 
-                    <input class="w-full p-md" type="text" id="last-name" name="last-name" title="Applicant's last name" placeholder="Enter your last name" autocomplete="family-name" required>
+                    <input class="full-width padding-medium" type="text" id="last-name" name="last-name" title="Applicant's last name" placeholder="Enter your last name" autocomplete="family-name" required>
                 </label>
 
                 <label class="fade-up" for="organizational-title">Organizational title
-                    <input class="w-full p-md" type="text" id="organizational-title" name="organizational-title" title="Organizational title (letters, hyphens and spaces only, min 7 characters)" placeholder="e.g. Executive Director" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
+                    <input class="full-width padding-medium" type="text" id="organizational-title" name="organizational-title" title="Organizational title (letters, hyphens and spaces only, min 7 characters)" placeholder="e.g. Executive Director" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$">
                 </label>
 
                 <label for="email">Email address <span>*</span> 
-                    <input class="w-full p-md" type="email" id="email" name="email" title="Applicant email address" placeholder="name@example.com" autocomplete="email" required>
+                    <input class="full-width padding-medium" type="email" id="email" name="email" title="Applicant email address" placeholder="name@example.com" autocomplete="email" required>
                 </label>
 
                 <label for="phone">Mobile phone <span>*</span> 
-                    <input class="w-full p-md" type="tel" id="phone" name="phone" title="Applicant mobile phone" placeholder="+27 11 123 4567" autocomplete="tel" required>
+                    <input class="full-width padding-medium" type="tel" id="phone" name="phone" title="Applicant mobile phone" placeholder="+27 11 123 4567" autocomplete="tel" required>
                 </label>
 
                 <label for="organization-name">Organization name <span>*</span> 
-                    <input class="w-full p-md" type="text" id="organization-name" name="organization" title="Business or organization name" placeholder="Enter organization name" autocomplete="organization" required>
+                    <input class="full-width padding-medium" type="text" id="organization-name" name="organization" title="Business or organization name" placeholder="Enter organization name" autocomplete="organization" required>
                 </label>
 
                 <label for="membership-level">Membership level <span>*</span> 
-                    <select class="w-full p-md" id="membership-level" name="membership" title="Select membership level" required>
+                    <select class="full-width padding-medium" id="membership-level" name="membership" title="Select membership level" required>
                         <option value="" selected disabled hidden>Choose a tier</option>
                         <option value="np">NP Membership (non-profit, no fee)</option>
                         <option value="bronze">Bronze Membership</option>
@@ -133,25 +132,25 @@
                 </label>
 
                 <label for="description">Organization description
-                    <textarea class="w-full p-md" id="description" name="description" title="Brief description of the organization" rows="5" placeholder="Tell us about your organization and what you do"></textarea>
+                    <textarea class="full-width padding-medium" id="description" name="description" title="Brief description of the organization" rows="5" placeholder="Tell us about your organization and what you do"></textarea>
                 </label>
 
                 <!-- timestamp populated by script when form loads -->
                 <input type="hidden" id="timestamp" name="timestamp" value="">
 
-                <input class="w-full p-md" type="submit" value="Send Application">
+                <input class="full-width padding-medium" type="submit" value="Send Application">
             </form>
 
         </section>
 
         <dialog id="membership-modal">
-            <div class="modal-container flex flex-container gap-md p-lg">
+            <div class="modal-container flex-layout flex-container flex-gap-medium padding-large">
                 <button class="modal-close" aria-label="Close modal"></button>
                 <h2 class="modal-title"></h2>
-                <p class="modal-description fs-clamp"></p>
+                <p class="modal-description responsive-font"></p>
                 <h3 class="features-header"></h3>
                 <ul class="modal-features"></ul>
-                <a href="#application-form" class="tier-btn flex flex-center p-sm" autofocus>
+                <a href="#application-form" class="tier-btn flex-layout flex-centered padding-small" autofocus>
                     Apply Now
                     <svg class="feather feather-arrow-right" fill="none" height="24"
                     stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -161,36 +160,35 @@
             </div>
         </dialog>
 
-
     </main>
-    <footer class="mt-lg">
-        <div class="p-lg m-center p-md gap-md footer-container">
+        <footer class="margin-top-large">
+            <div class="padding-large center-block padding-medium flex-gap-medium footer-container">
 
-            <div class="contact">
-                <p class="mb-sm"><span class="name">Johannesburg Chamber Hub</span></p>
-                <p class="mb-sm">3 Dan Street Florida</p>
-                <p class="mb-sm">info@johannesburgchamberhub.org</p>
-                <p class="mb-sm">+27 123 456 7891</p>
+                <div class="contact">
+                    <p class="margin-bottom-small"><span class="name">Johannesburg Chamber Hub</span></p>
+                    <p class="margin-bottom-small">3 Dan Street Florida</p>
+                    <p class="margin-bottom-small">info@johannesburgchamberhub.org</p>
+                    <p class="margin-bottom-small">+27 123 456 7891</p>
+                </div>
+
+                <div class="social-media flex-layout flex-gap-medium">
+                    <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
+                            alt="WDD231 Github Repository" width="22" height="22"></a>
+                    <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
+                            src="images/linkedin.svg" alt="Abel's LinkedIn Profile" width="22" height="22"></a>
+                    <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
+                            alt="Abel's Instagram Profile" width="22" height="22"></a>
+                </div>
+
+                <div class="project">
+                    <p class="margin-bottom-small">WDD 231 Class Project</p>
+                    <p class="margin-bottom-small">Abel Chiwandire</p>
+                    <p class="margin-bottom-small"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
+                    <p class="margin-bottom-small" id="lastModified"></p>
+                </div>
+
             </div>
-
-            <div class="social-media flex gap-md">
-                <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
-                        alt="WDD231 Github Repository" width="22" height="22"></a>
-                <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
-                        src="images/linkedin.svg" alt="Abel's LinkedIn Profile" width="22" height="22"></a>
-                <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
-                        alt="Abel's Instagram Profile" width="22" height="22"></a>
-            </div>
-
-            <div class="project">
-                <p class="mb-sm">WDD 231 Class Project</p>
-                <p class="mb-sm">Abel Chiwandire</p>
-                <p class="mb-sm"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
-                <p class="mb-sm" id="lastModified"></p>
-            </div>
-
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

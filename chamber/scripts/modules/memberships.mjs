@@ -79,7 +79,7 @@ export function displayMembershipTiers ()
 
         const h2 = document.createElement('h2');
         h2.textContent = tier.name;
-        h2.classList.add('mt-md');
+        h2.classList.add('margin-top-medium');
 
         const price = document.createElement('p');
         price.textContent = tier.price;
@@ -94,14 +94,14 @@ export function displayMembershipTiers ()
         
         const tagline = document.createElement('p');
         tagline.textContent = tier.tagline;
-        tagline.classList.add('flex-grow');
+        tagline.classList.add('flex-expand');
 
         const features = document.createElement('ul');
         features.classList.add('features-list');
 
         for(let i = 0; i < 3 && i < tier.features.length; i++){
             const li = document.createElement('li');
-            li.classList.add('ml-md');
+            li.classList.add('margin-left-medium');
             li.textContent = tier.features[i];
             features.appendChild(li);
         };
@@ -118,7 +118,7 @@ export function displayMembershipTiers ()
             y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         `;
         navLink.setAttribute(`aria-label`, `More information about the ${tier.name}`);
-        navLink.classList.add('tier-btn', 'flex', 'justify-between', 'mt-md');
+        navLink.classList.add('tier-btn', 'flex-layout', 'flex-spread', 'margin-top-medium');
         
         section.append(h2, price, tagline, features, featuresLeft, navLink);
         tiersSection.appendChild(section);

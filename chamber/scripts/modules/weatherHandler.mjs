@@ -22,7 +22,7 @@ export async function getCurrentWeather() {
 
 function displayCurrentWeather(data) {
     const card = document.createElement('div');
-    card.classList.add('weather-card', 'flex', 'flex-container', 'flex-center', 'm-center');
+    card.classList.add('weather-card', 'flex-layout', 'flex-container', 'flex-centered', 'center-block');
 
     const icon = document.createElement('img');
     icon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
@@ -37,7 +37,7 @@ function displayCurrentWeather(data) {
 
     const high = document.createElement('p');
     high.innerHTML = `High: <span>${Math.round(data.main.temp_max)}°C</span>`;
-    high.classList.add('mt-lg');
+    high.classList.add('margin-top-large');
 
     const low = document.createElement('p');
     low.innerHTML = `Low: <span>${Math.round(data.main.temp_min)}°C</span>`;
@@ -69,7 +69,7 @@ function displayForecast(dailyForecasts) {
 
     dailyForecasts.forEach(day => {
         const card = document.createElement('div');
-        card.classList.add('forecast-card', 'flex', 'justify-between', 'px-md', 'mb-md', 'flex-center');
+        card.classList.add('forecast-card', 'flex-layout', 'flex-spread', 'padding-horizontal-medium', 'margin-bottom-medium', 'flex-centered');
 
         // Container for day and description
         const textContainer = document.createElement('div');

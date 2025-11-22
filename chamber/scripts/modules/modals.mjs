@@ -31,7 +31,7 @@ export function setupMembershipModals() {
         modalFeatures.innerHTML = '';
         (tierData.features).forEach(feature => {
             const li = document.createElement('li');
-            li.classList.add('mb-sm');
+            li.classList.add('margin-bottom-small');
             li.textContent = feature;
             modalFeatures.appendChild(li);
         });

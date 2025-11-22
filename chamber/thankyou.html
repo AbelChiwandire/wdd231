@@ -22,56 +22,56 @@
     <script type="module" src="scripts/modules/search-params.mjs"></script>
 </head>
 <body>
-    <header class="flex justify-between w-full">
+    <header class="flex-layout flex-spread full-width">
         <img src="images/logo.svg" alt="Johannesburg Chamber Hub Logo">
         <button id="hamburger" aria-label="hamburger menu"></button>
-        <nav id="nav" class="w-full p-lg">
-            <ul class="flex gap-md flex-container">
-                <li><a class="p-sm" href="index.html" aria-label="Go to Home Page">Home</a></li>
-                <li><a class="p-sm" href="directory.html" aria-label="View Member Directory">Directory</a></li>
-                <li><a class="p-sm" href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
-                <li><a class="p-sm" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a>
-                </li>
+        <nav id="nav" class="full-width padding-large">
+            <ul class="flex-layout flex-gap-medium flex-container">
+                <li><a class="padding-small" href="index.html" aria-label="Go to Home Page">Home</a></li>
+                <li><a class="padding-small" href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li><a class="padding-small" href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
+                <li><a class="padding-small" href="#" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a></li>
             </ul>
         </nav>
     </header>
+
 </body>
     <main>
         <div class="hero-bg">
-            <div class="tagline flex-center m-center p-md text-center">
+            <div class="tagline flex-centered center-block padding-medium align-text-center">
                 <h1>THANK YOU.</h1>
-                <p class="fs-clamp">View your details below</p>
+                <p class="responsive-font">View your details below</p>
             </div>
         </div>
 
-        <div id="thank-you" class="thank-you p-lg"></div>
+        <div id="thank-you" class="thank-you padding-large"></div>
     </main>
-    <footer class="mt-lg">
-        <div class="p-lg m-center p-md gap-md footer-container">
+        <footer class="margin-top-large">
+            <div class="padding-large center-block padding-medium flex-gap-medium footer-container">
 
-            <div class="contact">
-                <p class="mb-sm"><span class="name">Johannesburg Chamber Hub</span></p>
-                <p class="mb-sm">3 Dan Street Florida</p>
-                <p class="mb-sm">info@johannesburgchamberhub.org</p>
-                <p class="mb-sm">+27 123 456 7891</p>
+                <div class="contact">
+                    <p class="margin-bottom-small"><span class="name">Johannesburg Chamber Hub</span></p>
+                    <p class="margin-bottom-small">3 Dan Street Florida</p>
+                    <p class="margin-bottom-small">info@johannesburgchamberhub.org</p>
+                    <p class="margin-bottom-small">+27 123 456 7891</p>
+                </div>
+
+                <div class="social-media flex-layout flex-gap-medium">
+                    <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
+                            alt="WDD231 Github Repository" width="22" height="22"></a>
+                    <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
+                            src="images/linkedin.svg" alt="Abel's LinkedIn Profile" width="22" height="22"></a>
+                    <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
+                            alt="Abel's Instagram Profile" width="22" height="22"></a>
+                </div>
+
+                <div class="project">
+                    <p class="margin-bottom-small">WDD 231 Class Project</p>
+                    <p class="margin-bottom-small">Abel Chiwandire</p>
+                    <p class="margin-bottom-small"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
+                    <p class="margin-bottom-small" id="lastModified"></p>
+                </div>
+
             </div>
-
-            <div class="social-media flex gap-md">
-                <a href="https://github.com/AbelChiwandire/wdd231/" target="_blank"><img src="images/github.svg"
-                        alt="WDD231 Github Repository" width="22" height="22"></a>
-                <a href="https://www.linkedin.com/in/abel-chiwandire-495766382/" target="_blank"><img
-                        src="images/linkedin.svg" alt="Abel's LinkedIn Profile" width="22" height="22"></a>
-                <a href="https://www.instagram.com/abel.chiwandire/" target="_blank"><img src="images/instagram.svg"
-                        alt="Abel's Instagram Profile" width="22" height="22"></a>
-            </div>
-
-            <div class="project">
-                <p class="mb-sm">WDD 231 Class Project</p>
-                <p class="mb-sm">Abel Chiwandire</p>
-                <p class="mb-sm"><span id="currentYear"></span> Johannesburg Chamber Hub</p>
-                <p class="mb-sm" id="lastModified"></p>
-            </div>
-
-        </div>
-    </footer>
+        </footer>
 </html>

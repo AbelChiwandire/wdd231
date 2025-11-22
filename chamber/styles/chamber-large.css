@@ -26,11 +26,7 @@
 	.info-grid {
 		grid-template-columns: repeat(4, 1fr);
 	}
-/*
-	.hero-container {
-		background-image: url('../images/hero-medium.webp');
-	}
-*/
+
     .cta a {
         padding: 1rem 2.5rem;
     }
@@ -50,7 +46,7 @@
 		justify-content: end;
 		align-items: center;
 		min-height: auto;
-		color: var(--clr-white);
+		color: var(--color-white);
 	}
 
 	nav .flex-container,
@@ -73,11 +69,7 @@
 	}
 }
 
-@media (min-width: 1024px) {/*
-	.hero-container {
-		background-image: url('../images/hero-large.webp');
-	}*/
-
+@media (min-width: 1024px) {
     .tagline {
 		max-width: 60%;
     }
