@@ -35,4 +35,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         populateTimestamp();
         fadeUp();
     }
+
+    // Discover page
+    if (document.querySelector('#places')) {
+        const { displayPlaces } = await import ('./modules/placesHandler.mjs');
+        displayPlaces();
+    }
 });

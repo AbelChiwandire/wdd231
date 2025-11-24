@@ -27,6 +27,22 @@
 		grid-template-columns: repeat(4, 1fr);
 	}
 
+	.hero-container {
+		background-image: url('../images/hero-medium.webp');
+	}
+
+	.places div {
+	display: grid;
+	grid-template-areas: 
+		"image title"
+		"image description"
+		"image address";
+	}
+
+	.places img {
+		width: 300px;
+	}
+
     .cta a {
         padding: 1rem 2.5rem;
     }
@@ -70,6 +86,15 @@
 }
 
 @media (min-width: 1024px) {
+	.hero-container {
+		background-image: url('../images/hero-large.webp');
+	}
+
+	.places {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
     .tagline {
 		max-width: 60%;
     }

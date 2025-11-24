@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johannesburg Chamber Hub | Connecting Business & Community</title>
+    <title>Johannesburg Chamber Hub | Johannesburg Attractions</title>
     <meta name="author" content="Abel Chiwandire">
-    <meta name="description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
+    <meta name="description" content="">
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="Johannesburg Chamber Hub">
-    <meta property="og:description" content="Connect with the Johannesburg business community. Discover events, forecasts, and featured member companies">
+    <meta property="og:title" content="Johannesburg Chamber Directory">
+    <meta property="og:description"
+        content="">
     <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/chamber/images/jch.png">
-    <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/chamber/discover.html">
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/reset.css">
@@ -33,55 +33,25 @@
         <button id="hamburger" aria-label="hamburger menu"></button>
         <nav id="nav" class="full-width padding-large">
             <ul class="flex-layout flex-gap-medium flex-container">
-                <li id="current"><a class="padding-small" href="#" aria-current="page">Home</a></li>
-                <li><a class="padding-small" href="directory.html" aria-label="View Member Directory">Directory</a></li>
+                <li><a class="padding-small" href="index.html" aria-label="Go to Home Page">Home</a></li>
+               <li><a class="padding-small" href="directory.html" aria-label="View Member Directory">Directory</a></li>
                 <li><a class="padding-small" href="join.html" aria-label="Join Johannesburg Chamber Hub">Join</a></li>
-                <li><a class="padding-small" href="discover.html" aria-label="Discover Johannesburg history, demographics, and local events">Discover</a></li>
+                <li id="current"><a class="padding-small" href="#" aria-current="page">Discover</a></li>
             </ul>
-        </nav> 
+        </nav>
     </header>
     <main>
-        <div class="hero-container full-width">
 
-            <div class="tagline padding-medium margin-left-medium">
-                <h1 class="margin-bottom-medium">Connecting Business, <span>Building Community.</span></h1>
-                <p class="margin-bottom-medium responsive-font">Join Johannesburg's premier business network.
-                    Connect with industry leaders, access exclusive events,
-                    and grow your business in Africa's economic hub.</p>
-                <div class="flex-layout flex-container flex-gap-medium">
-                    <a class="cta padding-medium flex-layout flex-gap-small explore" href="join.html#application-form">Become a Member ➜</a>
-                    <a class="cta padding-medium learn-more" href="#">Learn More</a>
-                </div>
+        <div class="hero-bg">
+
+            <div class="tagline flex-centered center-block padding-medium align-text-center">
+                <h1>JCH <span>Attractions</span></h1>
+                <p class="responsive-font">A curated overview of places worth exploring across the city.</p>
             </div>
 
         </div>
 
-        <div class="transition full-width"></div>
-
-        <div class="padding-large cards flex-gap-medium">
-
-            <section id="events" class="card">
-                <h2 class="align-text-center margin-bottom-medium">Upcoming Events</h2>
-            </section>
-
-            <section id="current-weather" class="card">
-                <h2 class="align-text-center margin-bottom-medium">Current Weather</h2>
-            </section>
-
-            <section id="weather-forecast" class="card">
-                <h2 class="align-text-center margin-bottom-medium">Weather Forecast</h2>
-                <div id="forecast-cards" class="forecast-cards"></div>
-            </section>
-
-        </div>
-
-        <section class="padding-large spotlights-container">
-            <h2 class="align-text-center">Our Members</h2>
-            <p class="align-text-center margin-bottom-large responsive-font">Meet the dynamic businesses that make up Johannesburg's premier chamber of commerce</p>
-
-            <div id="spotlights" class="cards flex-gap-medium"></div>
-
-        </section>
+        <div id="places" class="places margin-top-large"></div>
 
     </main>
         <footer class="margin-top-large">

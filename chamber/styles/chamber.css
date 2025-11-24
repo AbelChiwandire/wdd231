@@ -233,6 +233,19 @@ dialog button::after {
 }
 
 /*================================= HERO ==========================*/
+.hero-container {
+    background-image: url('../images/hero-small.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    padding-top: 160px;
+    padding-bottom: 90px;
+
+    position: relative; 
+}
+
 .hero-container::after {
     content: "";
     position: absolute;
@@ -313,7 +326,8 @@ input[type=submit],
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cards h2 {
+.cards h2,
+.places div h2 {
 	font-size: var(--font-medium);
 	font-weight: 600;
 	padding-bottom: var(--spacing-small);
@@ -626,6 +640,43 @@ input[type=submit] {
 .thank-you {
 	margin: 3rem auto;
 }
+
+/*============================== DISCOVER PAGE ======================*/
+.places div {
+	margin: 1rem 10px;
+	border: 1px solid rgb(153, 153, 153);
+	border-radius: var(--radius-medium);
+	overflow: hidden;
+
+	display: grid;
+	grid-template-areas: 
+	"title"
+	"image"
+	"description"
+	"address";
+}
+
+.places div h2 {
+	margin: 1rem 10px;
+	padding-bottom: 0;
+	grid-area: title;
+}
+
+.places img {
+	width: 100%;
+	grid-area: image;
+}
+
+.places p {
+	margin: 1rem 10px;
+	grid-area: description;
+}
+
+.places address {
+	margin: 1rem 10px;
+	grid-area: address;
+}
+
 
 /*=============================== FOOTER ===========================*/
 footer {
