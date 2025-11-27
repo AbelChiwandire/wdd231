@@ -1,0 +1,64 @@
+@media only screen and (min-width: 768px) {
+    .top-bar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .navigation {
+        display: block;
+        width: auto;
+        margin-top: 0;
+
+        max-height: none;      
+        opacity: 1;           
+        visibility: visible;   
+        overflow: visible;     
+    }
+
+    .navigation a {
+        display: inline-flex;
+        min-width: 110px;
+        margin-bottom: 0;
+        gap: 0.5rem;
+    }
+
+    .navigation a:hover {
+        transform: scale(1.05);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .layout {
+        grid-template-areas: 
+        "hero hero"
+        "scenarios info"
+        "palette palette"
+        "typography typography";
+    }
+
+    .scenario-card {
+        margin-top: 0;
+    }
+
+    .palette-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-triple {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dynamic {
+        grid-column: 1/4;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
