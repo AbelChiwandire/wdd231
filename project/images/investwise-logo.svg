@@ -1,0 +1,24 @@
+<!-- SVG with gradient background, rounded corners, and the arrow scaled down to
+     simulate approximately 1.5rem internal padding on all sides. -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="bp-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgb(37, 99, 235)" />
+      <stop offset="100%" stop-color="rgb(147, 51, 234)" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="64" height="64" rx="10" ry="10" fill="url(#bp-gradient)" />
+
+  <!-- Scaled-down arrow group -->
+  <!-- 1.5rem at 16px/rem ≈ 24px padding.  
+       Leftover drawable space: 64 - 48 = 16px.  
+       Centering requires translation of ~8px in both directions.  
+       Arrow scaled proportionally inside a 48×48 box. -->
+  <g transform="translate(8, 8) scale(0.75)">
+    <path fill="#ffffff" d="M60,16.71H42.57a.5.5,0,0,0-.5.5V21a.5.5,0,0,0,.5.5h9.74L37.84,35.78,23.93,25.86l-1.32-.93A.5.5,0,0,0,22,25L3.64,43.81a.49.49,0,0,0,0,.7l2.7,2.64a.48.48,0,0,0,.35.14h0a.47.47,0,0,0,.35-.15L22.83,30.93l13.88,9.89,1.29.92a.5.5,0,0,0,.64-.05L55.73,24.8v9.84a.5.5,0,0,0,.5.5H60a.5.5,0,0,0,.5-.5V17.21A.5.5,0,0,0,60,16.71Z"/>
+  </g>
+</svg>
