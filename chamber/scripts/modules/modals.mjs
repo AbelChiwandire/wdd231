@@ -44,3 +44,35 @@ export function setupMembershipModals() {
     modalClose.addEventListener('click', () => modal.close());
     applyNow.addEventListener('click', () => modal.close());
 }
+
+export function popUpMessage() {
+    const modal = document.getElementById('pop-up-modal');
+    const text = modal.querySelector('.modal-text');
+    const closeModal = modal.querySelector('.modal-close');
+
+    const msToDays = 86400000;
+    const today = Date.now();
+
+    let lastVisit = localStorage.getItem('lastVisit');
+
+    if (!lastVisit) {
+        text.textContent = `Welcome! Let us know if you have any questions.`
+    }
+    else {
+            const daysAgo = Math.floor((today - new Date(lastVisit)) / msToDays);
+
+        if (daysAgo >= 1) {
+            text.textContent = `Welcome back! You last visited ${daysAgo} day${daysAgo > 1 ? 's' : ''}. Let us know if you have any questions.`
+        }
+        else {
+            text.textContent = `Back so soon. Awesome!`;
+        }
+    }
+    lastVisit = today;
+    localStorage.setItem('lastVisit', lastVisit);
+
+    modal.showModal();
+
+    // Close modal button
+    closeModal.addEventListener('click', () => modal.close());
+}

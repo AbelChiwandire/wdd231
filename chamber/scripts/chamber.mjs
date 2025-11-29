@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Discover page
     if (document.querySelector('#places')) {
         const { displayPlaces } = await import ('./modules/placesHandler.mjs');
+        const { popUpMessage } = await import ('./modules/modals.mjs');
+        popUpMessage();
         displayPlaces();
     }
 });

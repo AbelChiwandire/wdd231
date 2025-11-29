@@ -19,6 +19,7 @@ export function displayPlaces() {
         const image = document.createElement('img');
         image.src = `images/${place.image_url}`;
         image.alt = place.name;
+        image.classList.add('contrast');
 
         div.append(title, address, description, image);
         container.appendChild(div);

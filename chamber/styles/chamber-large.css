@@ -78,6 +78,10 @@
 	.social-media {
 		justify-content: center;
 	}
+
+	.contrast {
+	filter: contrast(50%);
+}
 }
 @media (min-width: 900px) {
 	.list .member-card {
