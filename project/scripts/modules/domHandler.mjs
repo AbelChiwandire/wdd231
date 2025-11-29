@@ -41,7 +41,8 @@ export function initializeDom() {
         if (scrollY > 0) {
             header.style.background = "rgb(255 255 255 / 0.9)";
             header.style.backdropFilter = "blur(6px)";
-            header.style.boxShadow = "0 20px 25px -5px rgb(0 0 0 / 0.15)";
+            header.style.boxShadow = "0 15px 15px -5px rgb(0 0 0 / 0.15)";
+            header.style.transition = "all 300ms ease-out 0.2s";
         }
         else {
             header.style.background = "rgb(255 255 255";

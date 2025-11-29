@@ -40,16 +40,12 @@
         margin: 4rem
     }
 
-    .scenario-card {
-        margin-top: 0;
-    }
-
-    .palette-container {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .grid-triple {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-double {
+        grid-template-columns: 1fr 1fr;
     }
 
     .dynamic {
@@ -57,5 +53,10 @@
         display: flex;
         justify-content: space-between;
     }
+}
 
+@media only screen and (min-width: 1024px) {
+    .grid-triple {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
