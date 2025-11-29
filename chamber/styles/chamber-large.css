@@ -83,8 +83,8 @@
 		justify-content: center;
 	}
 
-	.contrast:hover {
-		filter: contrast(50%);
+	.opac:hover {
+		opacity: 0.5;
 	}
 }
 @media (min-width: 900px) {

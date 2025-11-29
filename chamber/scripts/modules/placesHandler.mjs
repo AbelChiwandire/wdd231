@@ -22,7 +22,7 @@ export function displayPlaces() {
         const image = document.createElement('img');
         image.src = `images/${place.image_url}`;
         image.alt = place.name;
-        image.classList.add('contrast', 'center-block');
+        image.classList.add('opac', 'center-block');
 
         if (index !== 0) {
             image.loading = 'lazy';
