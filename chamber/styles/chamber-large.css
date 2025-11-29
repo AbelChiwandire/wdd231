@@ -80,8 +80,8 @@
 	}
 
 	.contrast {
-	filter: contrast(50%);
-}
+		filter: contrast(50%);
+	}
 }
 @media (min-width: 900px) {
 	.list .member-card {
