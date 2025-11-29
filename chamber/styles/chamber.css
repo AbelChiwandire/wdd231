@@ -425,7 +425,8 @@ input[type=submit],
 
 /*============================== SPOTLIGHTS SECTION ==============================*/
 .spotlight-card:hover,
-.list .member-card {
+.list .member-card,
+.places img {
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -664,6 +665,7 @@ input[type=submit] {
 
 .places img {
 	width: 100%;
+	max-width: 300px;
 	grid-area: image;
 }
 
