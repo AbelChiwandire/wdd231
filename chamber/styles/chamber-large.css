@@ -83,7 +83,7 @@
 		justify-content: center;
 	}
 
-	.contrast {
+	.contrast:hover {
 		filter: contrast(50%);
 	}
 }

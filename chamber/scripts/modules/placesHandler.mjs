@@ -4,7 +4,7 @@ export function displayPlaces() {
     const container = document.querySelector('#places');
 
 
-    places.forEach(place => {
+    places.forEach((place, index) => {
         const div = document.createElement('div');
 
         const title = document.createElement('h2');
@@ -23,6 +23,10 @@ export function displayPlaces() {
         image.src = `images/${place.image_url}`;
         image.alt = place.name;
         image.classList.add('contrast', 'center-block');
+
+        if (index !== 0) {
+            image.loading = 'lazy';
+        }
 
         div.append(title, address, description, image);
         container.appendChild(div);
