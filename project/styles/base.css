@@ -103,7 +103,7 @@ body {
 }
 
 h1, h2, h3, .logo-title {
-    font-family: Montserrat, sans-serif;
+    font-family: Merriweather, sans-serif;
 }
 
 .hero-p {
@@ -140,15 +140,15 @@ p {
 
 
 .text-neutral-dark {color: var(--neutral-dark);}
-.text-background-mid {background: var(--neutral-text);}
 .text-background-white {background: rgb(var(--white));}
+.text-background-mid {background: var(--neutral-text);}
 .text-background-light{background: var(--neutral-border);}
 .text-color-light {color: rgb(196, 202, 212);}
 
 .color-gray {color: var(--gray);}
 .color-transparent {color: transparent;}
 .color-white {color: rgb(var(--white));}
-.color-green {color: var(--green)}
+.color-green {color: var(--green);}
 .color-red {color: rgb(220, 38, 38);}
 
 .current {background: var(--gradient-blue-purple-tr);}
@@ -272,19 +272,6 @@ a {
     transition: var(--transition);
 }
 
-.current path {
-    stroke: rgb(var(--white));
-}
-
-.nav-icon {
-    width: 1.2em;   
-    height: 1.2em;
-    stroke-width: 0.12em;  
-}
-
-
-.nav-icon-market { stroke-width: 0.6em; }
-
 /*===================================== HERO SECTION ===============================*/
 .hero { 
     overflow: hidden;  
@@ -320,10 +307,6 @@ a {
     right: 5%;
     z-index: 15;
     width: 300px;
-}
-
-.arrow-up path {
-    fill: rgba(var(--amber), 0.2);
 }
 
 .hero-content {
@@ -407,7 +390,6 @@ a {
     background: var(--hover-overlay-color);
     opacity: 0;
     transition: var(--transition);
-    pointer-events: none;
     z-index: 0;
 }
 
@@ -440,7 +422,6 @@ a {
     border-radius: var(--border-radius-pill);
     transform: scale(1);
     transition: transform 0.7s ease;
-    pointer-events: none;
     z-index: 0;
 }
 
@@ -534,12 +515,6 @@ input[type='search'] {
     color: var(--brown-text);
 }
 
-.active svg,
-.feedback-stars svg {
-    fill: rgb(var(--amber));
-    stroke: rgb(var(--amber));
-}
-
 .form-container {
     position: sticky;
     top: 7rem; 
@@ -552,7 +527,6 @@ input[type='search'] {
 
 .rating svg:hover {
     transform: scale(1.2);
-    stroke: rgb(var(--amber));
 }
 
 #lessons-container > button:hover {

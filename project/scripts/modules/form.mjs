@@ -4,17 +4,28 @@ export function formBtnToggle() {
 
     feedbackButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove 'current' class from all buttons
             feedbackButtons.forEach(btn => {
-                btn.classList.remove('current', 'gradient-purple-pink', 'color-white');
+                btn.classList.remove('current', 'gradient-purple-pink');
+                
+                const span = btn.querySelector('span');
+                if (span) {
+                    span.classList.remove('background-clip', 'color-transparent', 'text-background-white');
+                }
+                
                 btn.setAttribute('aria-checked', 'false');
             });
+
             feedbackTypeInput.value = button.textContent.trim();
-            // Add 'current' class to the clicked button
-            button.classList.add('current', 'gradient-purple-pink', 'color-white');
+
+            button.classList.add('current', 'gradient-purple-pink');
+            const span = button.querySelector('span');
+            if (span) {
+                span.classList.add('background-clip', 'color-transparent', 'text-background-white');
+            }
             button.setAttribute('aria-checked', 'true');
         });
     });
+
 }
 
 export function formRating() {
@@ -34,6 +45,15 @@ export function formRating() {
       // Toggle "active" class for all buttons <= clicked index
       ratingButtons.forEach((b, i) => {
         b.classList.toggle('active', i <= index);
+        const svg = b.querySelector('svg');
+        if (b.classList.contains('active')) {
+            svg.style.fill = "rgb(245, 158, 11)";
+            svg.style.stroke = "rgb(245, 158, 11)";
+        }
+        else {
+          svg.style.fill = "";
+          svg.style.stroke = "";
+        }
         b.setAttribute('aria-checked', i === index ? 'true' : 'false');
       });
     });

@@ -106,7 +106,8 @@ export async function setUpLessons() {
       lessonContent.innerHTML = `
         <img class="margin-top-medium margin-bottom-medium width-full border-radius-small" 
           src="images/${lesson.image}" 
-          alt="${lesson.content[0].heading}">
+          alt="${lesson.content[0].heading}"
+          loading="lazy">
         <h3 class="margin-bottom-small font-size">${lesson.content[0].heading}</h3>
         <p class="margin-bottom-small text-neutral-dark">${lesson.content[0].text}</p>
         <div class="example padding-normal margin-bottom-normal font-size-description">
