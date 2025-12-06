@@ -29,8 +29,8 @@ export const CryptoModal = (() => {
       return;
     }
 
-    const colorClass24 = coin.price_change_percentage_24h >= 0 ? 'color-green' : 'color-red';
-    const colorClass7d = coin.price_change_percentage_7d_in_currency >= 0 ? 'color-green' : 'color-red';
+    const colorClass24 = coin.price_change_percentage_24h >= 0 ? 'color-green-dark' : 'color-red';
+    const colorClass7d = coin.price_change_percentage_7d_in_currency >= 0 ? 'color-green-dark' : 'color-red';
 
     content.innerHTML = '';
     content.innerHTML = `
@@ -74,7 +74,7 @@ export const CryptoModal = (() => {
         <div class="flex-layout large-gap">
             <div>
                 <h4 class="font-size-normal text-neutral-dark font-light-weight">24h high</h4>
-                <p class="color-green">${RenderModule.formatPrice(coin.high_24h)}</p>
+                <p class="color-green-dark">${RenderModule.formatPrice(coin.high_24h)}</p>
             </div>
 
             <div>

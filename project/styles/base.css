@@ -149,6 +149,7 @@ p {
 .color-transparent {color: transparent;}
 .color-white {color: rgb(var(--white));}
 .color-green {color: var(--green);}
+.color-green-dark {color: var(--green-dark);}
 .color-red {color: rgb(220, 38, 38);}
 
 .current {background: var(--gradient-blue-purple-tr);}
@@ -673,6 +674,10 @@ footer a:hover {
 
 footer img {
     width: 40px;
+}
+
+.img-width {
+    width: 55px;
 }
 
 footer .logo-title {

@@ -29,13 +29,13 @@ export const RenderModule = (() => {
     ? `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up w-4 h-4"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>`
     : `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-down w-4 h-4"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>`;
 
-    const colorClass = coin.price_change_percentage_24h >= 0 ? 'color-green' : 'color-red';
+    const colorClass = coin.price_change_percentage_24h >= 0 ? 'color-green-dark' : 'color-red';
 
     card.innerHTML = `
       <div class="flex-layout small-gap">
-          <img class="square" src="${coin.image}" alt="${coin.name}"/>
+          <img class="img-width" src="${coin.image}" alt="${coin.name}"/>
           <div>
-              <h3 class="coin-name">${coin.name}</h3>
+              <h2 class="coin-name">${coin.name}</h2>
               <p class="text-neutral-dark">${coin.symbol.toUpperCase()}</p>
           </div>
       </div>
