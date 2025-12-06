@@ -2,6 +2,7 @@ export const DataModule = (() => {
   let data = [];
   const subscribers = [];
   const REFRESH_INTERVAL = 60000; // refresh interval constant
+  const apiKey = 'CG-nVD6bpU7YpAT4Aq9zG3HcFh5';
 
   // Notify all subscribers
   const notify = () => {
@@ -38,7 +39,12 @@ export const DataModule = (() => {
 
     try {
       const response = await fetch(
-        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=24h,7d'
+        'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=24h,7d',
+        {
+          headers: {
+            'x-cg-demo-api-key': apiKey
+          }
+        }
       );
       const result = await response.json();
       data = result;
