@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestWise | Live Market Data</title>
+    <meta name="author" content="Abel Chiwandire">
+    <meta name="description" content="Live cryptocurrency prices and market trends to help you track movements and build real-time market awareness.">
+
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" type="image/svg+xml" href="images/investwise-logo.svg"/>
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="InvestWise - Live Market Data">
+    <meta property="og:description" content="Explore real-time crypto data with interactive prices designed for learning and daily market tracking">
+    <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/project/images/banner.png"/>
+    <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/project/market.html">
+
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InvestWise - Live Market Data">
+    <meta name="twitter:description" content="Explore real-time crypto data with interactive prices designed for learning and daily market tracking">
+    <meta name="twitter:image" content="https://abelchiwandire.github.io/wdd231/project/images/banner.png">
+    <meta name="twitter:url" content="https://abelchiwandire.github.io/wdd231/project/market.html">
+
+    <!-- Scripts -->
+    <script type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/crypto-main.mjs"></script>
+</head>
+<body>
+    <header data-animated="false" class="text-background-white width-full">
+            <div class="top-bar flex-layout flex-center justify-space-between wrap">
+
+                <div class="logo flex-layout flex-center">
+                    <div class="logo-icon-container gradient-blue-purple flex-layout flex-center square border-radius-small">
+                        <svg class="logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 20" id="Layer_20"><path fill="#fff" d="M60,16.71H42.57a.5.5,0,0,0-.5.5V21a.5.5,0,0,0,.5.5h9.74L37.84,35.78,23.93,25.86l-1.32-.93A.5.5,0,0,0,22,25L3.64,43.81a.49.49,0,0,0,0,.7l2.7,2.64a.48.48,0,0,0,.35.14h0a.47.47,0,0,0,.35-.15L22.83,30.93l13.88,9.89,1.29.92a.5.5,0,0,0,.64-.05L55.73,24.8v9.84a.5.5,0,0,0,.5.5H60a.5.5,0,0,0,.5-.5V17.21A.5.5,0,0,0,60,16.71Z"/></g></svg>
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-title h2-font-weight color-transparent background-clip">InvestWise</div>
+                        <div class="logo-tag text-neutral-dark font-size-small">Learn. Invest. Grow.</div>
+                    </div>
+                </div>
+
+                <button id="nav-btn" class="hamburger neutral-hover border-radius-small" aria-label="Menu button"></button>
+
+                <nav id="nav-bar" class="navigation button-font-weight slide-down width-full hide font-size-normal">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="flex-layout medium-gap text-neutral-dark neutral-hover border-radius-small">
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="learn.html" class="flex-layout medium-gap text-neutral-dark neutral-hover border-radius-small">                     
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5 text-slate-600"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                                Learn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="market.html" class="current color-white flex-layout medium-gap text-neutral-dark neutral-hover border-radius-small">
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
+                                Market
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    <main class="grid-single">
+
+        <section class="card gradient-green circle color-white margin-top-larger padding-hero">
+
+            <div class="flex-layout justify-space-between flex-vertical-center">
+
+                <h1 class="font-size-clamp">Live Market Data</h1>
+
+                <button id="refresh" class="background-color-white-faint color-white font-size-small padding-small align-self border-radius-small">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw w-5 h-5"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg>
+                </button>
+
+            </div>  
+            
+            <p class="font-size-medium color-transparent text-background-white background-clip">
+                Track real-time cryptocurrency prices from around the globe
+            </p>
+
+        </section>
+
+            <div class="flex-layout flex-vertical-center card padding-medium medium-gap text-background-white neutral-border">
+                <svg class="nav-icon color-gray search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <input class="border-radius-small position-relative gray-border width-full padding-small" id="crypto-search" type="search" placeholder="Search cryptocurrencies..." aria-label="Search lessons" autocomplete="off">
+            </div>
+
+        <section id="crypto-container" class="margin-bottom-extra-large grid-single grid-double grid-triple"></section>
+
+        <dialog class="border-radius-small">
+            <div id="crypto-dialog-content" class="padding-medium flex-layout flex-column medium-gap position-relative"></div>
+        </dialog>
+
+    </main>
+    <footer class="color-white grid-single grid-triple">
+
+        <div class="margin-bottom-large">
+            <div class="logo flex-layout margin-bottom-normal">
+                <img src="images/investwise-logo.svg" alt="InvestWise logo">
+                <div class="logo-text">
+                    <div class="logo-title h2-font-weight color-white font-size-medium">InvestWise</div>
+                </div>
+            </div>
+            <p class="color-transparent text-background-mid background-clip">Empowering beginner investors with knowledge and tools to make informed financial decisions.</p>
+        </div>
+
+        <div class="flex-layout flex-column medium-gap margin-bottom-large">
+            <h3>Quick Links</h3>
+            <ul>
+                <li class="margin-bottom-small"><a href="index.html" class="color-transparent text-background-mid background-clip">Home</a></li>
+                <li class="margin-bottom-small"><a href="learn.html" class="color-transparent text-background-mid background-clip">Learn</a></li>
+                <li class="margin-bottom-small"><a href="market.html" class="color-transparent text-background-mid background-clip">Market</a></li>
+            </ul>
+        </div>
+        
+        <div class="flex-layout flex-column medium-gap margin-bottom-large">
+            <h3>Disclaimer</h3>
+            <p class="color-transparent text-background-mid background-clip">This platform is for educational purposes only. Not financial advice. Always do your own research and consult with financial professionals before investing.</p>
+        </div>
+
+        <div class="dynamic margin-bottom-large">
+            <p class="color-transparent text-background-mid background-clip margin-bottom-small"><span id="currentYear"></span> InvestWise. Built with passion for investor education.</p>
+            <p id="lastModified" class="color-transparent text-background-mid background-clip margin-bottom-small"></p>
+        </div>
+
+    </footer>
+    
+</body>
+</html

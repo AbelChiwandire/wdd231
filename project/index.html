@@ -5,70 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvestWise | Master Investing</title>
     <meta name="author" content="Abel Chiwandire">
-    <meta name="description" content="">
+    <meta name="description" content="InvestWise helps beginners learn investing, track live market data, and master stocks, forex, and cryptocurrency.">
 
+    <!-- CSS stylesheets -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" type="image/svg+xml" href="images/investwise-logo.svg"/>
 
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,300..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Social media meta tags -->
-    <meta property="og:title" content="InvestWise">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/project/images/"/>
+    <!-- Facebook meta tags -->
+    <meta property="og:title" content="InvestWise - Master Investing">
+    <meta property="og:description" content="Learn investing from scratch, track live market data, and master stocks, forex, and crypto with InvestWise.">
+    <meta property="og:image" content="https://abelchiwandire.github.io/wdd231/project/images/banner.png"/>
     <meta property="og:url" content="https://abelchiwandire.github.io/wdd231/project/index.html">
 
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InvestWise - Master Investment">
+    <meta name="twitter:description" content="Learn investing from scratch, track live market data, and master stocks, forex, and crypto with InvestWise.">
+    <meta name="twitter:image" content="https://abelchiwandire.github.io/wdd231/project/images/banner.png">
+    <meta name="twitter:url" content="https://abelchiwandire.github.io/wdd231/project/index.html">
+
+    <!-- Scripts -->
     <script type="module" src="scripts/main.mjs"></script>
 </head>
 <body>
-    <header class="text-background-white">
-            <div class="top-bar flex-layout flex-center">
+    <header data-animated="false" class="text-background-white width-full">
+            <div class="top-bar flex-layout flex-center justify-space-between wrap">
 
                 <div class="logo flex-layout flex-center">
-                    <div class="logo-icon-container flex-layout flex-center square">
+                    <div class="logo-icon-container gradient-blue-purple flex-layout flex-center square border-radius-small">
                         <svg class="logo-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 20" id="Layer_20"><path fill="#fff" d="M60,16.71H42.57a.5.5,0,0,0-.5.5V21a.5.5,0,0,0,.5.5h9.74L37.84,35.78,23.93,25.86l-1.32-.93A.5.5,0,0,0,22,25L3.64,43.81a.49.49,0,0,0,0,.7l2.7,2.64a.48.48,0,0,0,.35.14h0a.47.47,0,0,0,.35-.15L22.83,30.93l13.88,9.89,1.29.92a.5.5,0,0,0,.64-.05L55.73,24.8v9.84a.5.5,0,0,0,.5.5H60a.5.5,0,0,0,.5-.5V17.21A.5.5,0,0,0,60,16.71Z"/></g></svg>
                     </div>
                     <div class="logo-text">
-                        <div class="logo-title color-transparent background-clip">InvestWise</div>
-                        <div class="logo-tag text-neutral-dark">Learn. Invest. Grow.</div>
+                        <div class="logo-title h2-font-weight color-transparent background-clip">InvestWise</div>
+                        <div class="logo-tag text-neutral-dark font-size-small">Learn. Invest. Grow.</div>
                     </div>
                 </div>
 
-                <button id="nav-btn" class="hamburger neutral-hover" aria-label="Menu button"></button>
+                <button id="nav-btn" class="hamburger neutral-hover border-radius-small" aria-label="Menu button"></button>
 
-                <nav id="nav-bar" class="navigation">
+                <nav id="nav-bar" class="navigation button-font-weight slide-down width-full hide font-size-normal">
                     <ul>
                         <li>
-                            <a  id="current" href="#home" class="flex-layout medium-gap text-neutral-dark color-white neutral-hover">
-                                <svg class="nav-icon nav-icon-home" viewBox="0 0 24 24" fill="none">
-                                    <path d="M4.5 22V17M4.5 7V2M2 4.5H7M2 19.5H7M13 3L11.2658 7.50886C10.9838 8.24209 10.8428 8.60871 10.6235 8.91709C10.4292 9.1904 10.1904 9.42919 9.91709 9.62353C9.60871 9.84281 9.24209 9.98381 8.50886 10.2658L4 12L8.50886 13.7342C9.24209 14.0162 9.60871 14.1572 9.91709 14.3765C10.1904 14.5708 10.4292 14.8096 10.6235 15.0829C10.8428 15.3913 10.9838 15.7579 11.2658 16.4911L13 21L14.7342 16.4911C15.0162 15.7579 15.1572 15.3913 15.3765 15.0829C15.5708 14.8096 15.8096 14.5708 16.0829 14.3765C16.3913 14.1572 16.7579 14.0162 17.4911 13.7342L22 12L17.4911 10.2658C16.7579 9.98381 16.3913 9.8428 16.0829 9.62353C15.8096 9.42919 15.5708 9.1904 15.3765 8.91709C15.1572 8.60871 15.0162 8.24209 14.7342 7.50886L13 3Z"
-                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="#home" class="current flex-layout medium-gap text-neutral-dark color-white neutral-hover border-radius-small">
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#learn" class="flex-layout medium-gap text-neutral-dark neutral-hover">                     
-                                <svg class="nav-icon nav-icon-learn" viewBox="0 0 24 24" fill="none">
-                                    <path d="M22,19H15a3,3,0,0,0-3,3V5a3,3,0,0,1,3-3h7Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="miter"/>
-                                    <path d="M2,19H9a3,3,0,0,1,3,3V5A3,3,0,0,0,9,2H2Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="miter"/>
-                                </svg>
+                            <a href="learn.html" class="flex-layout medium-gap text-neutral-dark neutral-hover border-radius-small">                     
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5 text-slate-600"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
                                 Learn
                             </a>
                         </li>
                         <li>
-                            <a href="#market" class="flex-layout medium-gap text-neutral-dark neutral-hover">
-                                <svg class="nav-icon nav-icon-market" viewBox="0 0 120 120" fill="none">
-                                    <line x1="20" y1="110" x2="20" y2="10" stroke="currentColor"/>
-                                    <line x1="20" y1="110" x2="110" y2="110" stroke="currentColor"/>
-                                    <line x1="40" y1="90" x2="40" y2="60" stroke="currentColor"/>
-                                    <line x1="70" y1="90" x2="70" y2="15" stroke="currentColor"/>
-                                    <line x1="100" y1="90" x2="100" y2="40" stroke="currentColor"/>
-                                </svg>
+                            <a href="market.html" class="flex-layout medium-gap text-neutral-dark neutral-hover border-radius-small">
+                                <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
                                 Market
                             </a>
                         </li>
@@ -78,37 +77,39 @@
 
     </header>
     <main class="grid-single">
-        <div class="hero fade-up">
+        <div class="hero fade-up position-relative">
+           <picture>
+                <source srcset="images/blockchain-large.webp" media="(min-width: 1024px)">
+                <source srcset="images/blockchain-medium.webp" media="(min-width: 768px)">
+                <img class="hero-img width-full" src="images/blockchain-small.webp" alt="Abstract representation of blockchain technology with interconnected blocks and digital data flow">
+            </picture>
             <svg class="arrow-up" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 20" id="Layer_20"><path fill="#fff" d="M60,16.71H42.57a.5.5,0,0,0-.5.5V21a.5.5,0,0,0,.5.5h9.74L37.84,35.78,23.93,25.86l-1.32-.93A.5.5,0,0,0,22,25L3.64,43.81a.49.49,0,0,0,0,.7l2.7,2.64a.48.48,0,0,0,.35.14h0a.47.47,0,0,0,.35-.15L22.83,30.93l13.88,9.89,1.29.92a.5.5,0,0,0,.64-.05L55.73,24.8v9.84a.5.5,0,0,0,.5.5H60a.5.5,0,0,0,.5-.5V17.21A.5.5,0,0,0,60,16.71Z"/></g></svg>
-            <div class="flex-layout flex-column medium-gap hero-content">
+            <div class="flex-layout flex-column medium-gap hero-content position-relative">
 
-                <div class="cta fit-content">
+                <div class="cta fit-content padding-small font-size-normal">
                     <a href="learn.html" class="flex-layout flex-center small-gap">
-                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none">
-                            <path d="M4.5 22V17M4.5 7V2M2 4.5H7M2 19.5H7M13 3L11.2658 7.50886C10.9838 8.24209 10.8428 8.60871 10.6235 8.91709C10.4292 9.1904 10.1904 9.42919 9.91709 9.62353C9.60871 9.84281 9.24209 9.98381 8.50886 10.2658L4 12L8.50886 13.7342C9.24209 14.0162 9.60871 14.1572 9.91709 14.3765C10.1904 14.5708 10.4292 14.8096 10.6235 15.0829C10.8428 15.3913 10.9838 15.7579 11.2658 16.4911L13 21L14.7342 16.4911C15.0162 15.7579 15.1572 15.3913 15.3765 15.0829C15.5708 14.8096 15.8096 14.5708 16.0829 14.3765C16.3913 14.1572 16.7579 14.0162 17.4911 13.7342L22 12L17.4911 10.2658C16.7579 9.98381 16.3913 9.8428 16.0829 9.62353C15.8096 9.42919 15.5708 9.1904 15.3765 8.91709C15.1572 8.60871 15.0162 8.24209 14.7342 7.50886L13 3Z"
-                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles w-4 h-4"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg>
                         Start Your Investment Journey 
                     </a>               
                 </div>
 
-                <h1 class="color-white font-size-clamp fade-up second-delay">Master Investing,<br><span class="color-transparent background-clip gradient-orange">One Lesson at a Time</span></h1>
-                <p class="color-transparent text-background-light background-clip">Learn the fundamentals of stocks, forex, and cryptocurrency with clear, beginner-friendly guides designed to build your confidence.</p>
+                <h1 class="color-white font-size-clamp fade-up second-delay">Master Investing,<br><span class="color-transparent background-clip gradient-orange-light">One Lesson at a Time</span></h1>
+                <p class="hero-p font-size-medium color-transparent text-background-light background-clip">Learn the fundamentals of stocks, forex, and cryptocurrency with clear, beginner-friendly guides designed to build your confidence.</p>
 
                 <div class="wrap flex-layout flex-vertical-center large-gap color-transparent text-background-mid background-clip fade-up fourth-delay">
 
                     <div class="flex-layout flex-vertical-center small-gap">
-                        <div class="bullet green-bullet"></div>
+                        <div class="bullet green-bullet border-radius-circle"></div>
                         <div>Free Forever</div>
                     </div>
 
                     <div class="flex-layout flex-vertical-center small-gap">
-                        <div class="bullet gray-bullet"></div>
+                        <div class="bullet text-background-mid border-radius-circle"></div>
                         <div>No financial jargon</div>
                     </div>
                     
                     <div class="flex-layout flex-vertical-center small-gap">
-                        <div class="bullet gray-bullet"></div>
+                        <div class="bullet text-background-mid border-radius-circle"></div>
                         <div>Learn at your pace</div>
                     </div>
 
@@ -121,87 +122,63 @@
         <section class="grid-single grid-double grid-triple">
 
             <div class="card flex-layout flex-column medium-gap shadow text-background-white neutral-border">
-                <div class="info-icon-container flex-layout flex-center background-color-blue">
-                    <svg class="info-icon info-icon-learn" viewBox="0 0 24 24" fill="none" width="30px">
-                        <path d="M22,19H15a3,3,0,0,0-3,3V5a3,3,0,0,1,3-3h7Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter"/>
-                        <path d="M2,19H9a3,3,0,0,1,3,3V5A3,3,0,0,0,9,2H2Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter"/>
-                    </svg>                   
+                <div class="info-icon-container border-radius-small flex-layout flex-center background-color-blue">
+                    <svg class="info-icon info-icon-learn" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5 text-slate-600"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>                   
                 </div>
                 <h2>Comprehensive Lessons</h2>
-                 <p class="text-neutral-dark">Learn stocks, forex, and crypto with easy-to-understand guides</p>
+                 <p class="color-gray">Learn stocks, forex, and crypto with easy-to-understand guides</p>
             </div>
 
             <div class="card flex-layout flex-column medium-gap shadow text-background-white neutral-border">
-                <div class="info-icon-container flex-layout flex-center gradient-green">
-                    <svg class="info-icon info-icon-market" viewBox="0 0 120 120" fill="none" width="30px">
-                        <line x1="20" y1="110" x2="20" y2="10" stroke="#fff" stroke-width="7"/>
-                        <line x1="20" y1="110" x2="110" y2="110" stroke="#fff" stroke-width="7"/>
-                        <line x1="40" y1="90" x2="40" y2="60" stroke="#fff" stroke-width="7"/>
-                        <line x1="70" y1="90" x2="70" y2="15" stroke="#fff" stroke-width="7"/>
-                        <line x1="100" y1="90" x2="100" y2="40" stroke="#fff"stroke-width="7"/>
-                    </svg>
+                <div class="info-icon-container border-radius-small flex-layout flex-center gradient-green">
+                    <svg class="info-icon info-icon-market" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
                 </div>
                 <h2>Live Market Data</h2>
-                <p class="text-neutral-dark">Track real-time cryptocurrency prices and market trends</p>
+                <p class="color-gray">Track real-time cryptocurrency prices and market trends</p>
             </div>
 
             <div class="card flex-layout flex-column medium-gap shadow text-background-white neutral-border">
-                <div class="info-icon-container flex-layout flex-center background-color-purple">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="info-icon info-icon-concentric"
-                        role="img" aria-labelledby="concentricTitle" fill="none" width="30px">
-                        <title id="concentricTitle">Concentric circles</title>
-                        <circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.5" />
-                        <circle cx="12" cy="12" r="5.5" stroke="#fff" stroke-width="1.5" />
-                        <circle cx="12" cy="12" r="2" stroke="#fff" stroke-width="1.5" />
-                    </svg>
+                <div class="info-icon-container border-radius-small flex-layout flex-center background-color-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-7 h-7 text-white"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
                 </div>
                 <h2>Track Your Progress</h2>
-                <p class="text-neutral-dark">Monitor your learning journey with built-in progress tracking</p>
+                <p class="color-gray">Monitor your learning journey with built-in progress tracking</p>
             </div>
 
         </section>
 
         <div class="grid-single grid-double margin-top-large">
-            <section class="card gradient-blue-purple circle color-white">
+            <section class="card gradient-blue-purple circle circle-hover color-white">
 
                 <div class="flex-layout flex-column medium-gap">
                     <div>
-                        <svg class="icon icon-learn" viewBox="0 0 24 24" fill="none" width="50px">
-                            <path d="M22,19H15a3,3,0,0,0-3,3V5a3,3,0,0,1,3-3h7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter"/>
-                            <path d="M2,19H9a3,3,0,0,1,3,3V5A3,3,0,0,0,9,2H2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter"/>
-                        </svg>                   
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-5 h-5 text-slate-600"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>                   
                     </div>            
-                    <h2>Start Learning Today</h2>
+                    <h2 class="font-size-large h2-font-weight">Start Learning Today</h2>
                     <p class="color-transparent text-background-light background-clip">
                         Master investing fundamentals with our comprehensive lessons on stocks, forex, and cryptocurrency.
                     </p>
                     <div class="text-background-white fit-content padding-small border-radius-small blue position-relative hover-overlay">
-                        <a class="color-transparent background-clip background-color-blue font-bold" aria-label="Visit the learn page an start learning today" href="learn.html">Explore More</a>
+                        <a class="color-transparent background-clip background-color-blue button-font-weight font-size-normal" aria-label="Visit the learn page an start learning today" href="learn.html">Explore More</a>
                     </div>
                     
                 </div>
 
             </section>
 
-            <section class="card gradient-green circle color-white">
+            <section class="card gradient-green circle circle-hover color-white">
 
                 <div class="flex-layout flex-column medium-gap">
                     <div>
-                        <svg class="icon icon-market" viewBox="0 0 120 120" fill="none" width="50px">
-                            <line x1="20" y1="110" x2="20" y2="10" stroke="currentColor" stroke-width="8"/>
-                            <line x1="20" y1="110" x2="110" y2="110" stroke="currentColor" stroke-width="8"/>
-                            <line x1="40" y1="90" x2="40" y2="60" stroke="currentColor" stroke-width="8"/>
-                            <line x1="70" y1="90" x2="70" y2="15" stroke="currentColor" stroke-width="8"/>
-                            <line x1="100" y1="90" x2="100" y2="40" stroke="currentColor" stroke-width="8"/>
-                        </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column w-4 h-4"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M18 17V9"></path><path d="M13 17V5"></path><path d="M8 17v-3"></path></svg>
                     </div>
-                    <h2>Live Market Data</h2>
+                    <h2 class="font-size-large h2-font-weight">Live Market Data</h2>
 
                     <p class="color-transparent text-background-light background-clip">
                         Stay updated with real-time cryptocurrency prices and market insights from around the globe.
                     </p>
                     <div class="text-background-white fit-content padding-small border-radius-small green position-relative hover-overlay">
-                        <a class="color-transparent background-clip background-color-green font-bold" aria-label="Visit the market page and view live cryptocurrency data" href="market.html">View Market</a>
+                        <a class="color-transparent background-clip background-color-green button-font-weight font-size-normal" aria-label="Visit the market page and view live cryptocurrency data" href="market.html">View Market</a>
                     </div>
                     
                 </div>
@@ -212,16 +189,16 @@
         <section class="card margin-top-large margin-bottom-extra-large text-background-white neutral-border">
             <div class="grid-single grid-triple medium-gap" >
                 <div class="flex-layout flex-column flex-center">
-                    <div class="font-size-large color-transparent background-clip background-color-blue">15+</div>
-                    <p class="text-neutral-dark">Comprehensive Lessons</p>
+                    <div class="font-size-large info-font-weight color-transparent background-clip background-color-blue">15+</div>
+                    <p class="color-gray">Comprehensive Lessons</p>
                 </div>
                 <div class="flex-layout flex-column flex-center">
-                    <div class="font-size-large color-transparent background-clip gradient-green">100+</div>
-                    <p class="text-neutral-dark">Live Market Data Points</p>
+                    <div class="font-size-large info-font-weight color-transparent background-clip gradient-green">100+</div>
+                    <p class="color-gray">Live Market Data Points</p>
                 </div>
                 <div class="flex-layout flex-column flex-center">
-                    <div class="font-size-large color-transparent background-clip background-color-purple">Free</div>
-                    <p class="text-neutral-dark">Forever & Always</p>
+                    <div class="font-size-large info-font-weight color-transparent background-clip background-color-purple">Free</div>
+                    <p class="color-gray">Forever & Always</p>
                 </div>
             </div>
         </section>
@@ -230,10 +207,10 @@
     <footer class="color-white grid-single grid-triple">
 
         <div class="margin-bottom-large">
-            <div class="logo flex-layout margin-bottom-medium">
+            <div class="logo flex-layout margin-bottom-normal">
                 <img src="images/investwise-logo.svg" alt="InvestWise logo">
                 <div class="logo-text">
-                    <div class="logo-title color-white">InvestWise</div>
+                    <div class="logo-title h2-font-weight color-white font-size-medium">InvestWise</div>
                 </div>
             </div>
             <p class="color-transparent text-background-mid background-clip">Empowering beginner investors with knowledge and tools to make informed financial decisions.</p>
@@ -242,9 +219,9 @@
         <div class="flex-layout flex-column medium-gap margin-bottom-large">
             <h3>Quick Links</h3>
             <ul>
-                <li class="margin-bottom-small"><a href="#home" class="color-transparent text-background-mid background-clip">Home</a></li>
-                <li class="margin-bottom-small"><a href="#learn" class="color-transparent text-background-mid background-clip">Learn</a></li>
-                <li class="margin-bottom-small"><a href="#market" class="color-transparent text-background-mid background-clip">Market</a></li>
+                <li class="margin-bottom-small"><a href="index.html" class="color-transparent text-background-mid background-clip">Home</a></li>
+                <li class="margin-bottom-small"><a href="learn.html" class="color-transparent text-background-mid background-clip">Learn</a></li>
+                <li class="margin-bottom-small"><a href="market.html" class="color-transparent text-background-mid background-clip">Market</a></li>
             </ul>
         </div>
         
