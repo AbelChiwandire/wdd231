@@ -677,7 +677,7 @@ footer img {
 }
 
 .img-width {
-    width: 55px;
+    object-fit: contain;
 }
 
 footer .logo-title {

@@ -33,7 +33,7 @@ export const RenderModule = (() => {
 
     card.innerHTML = `
       <div class="flex-layout small-gap">
-          <img class="img-width" src="${coin.image}" alt="${coin.name}"/>
+          <img class="square img-width" src="${coin.image}" alt="${coin.name}"/>
           <div>
               <h2 class="coin-name">${coin.name}</h2>
               <p class="text-neutral-dark">${coin.symbol.toUpperCase()}</p>
